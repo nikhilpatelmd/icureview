@@ -29,7 +29,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const { getAllPosts } = require('./config/collections/index.js');
+const { getAllTrials } = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -41,6 +41,9 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
 module.exports = eleventyConfig => {
+  eleventyConfig.setBrowserSyncConfig({
+    open: true,
+  });
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');
@@ -49,7 +52,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('page', 'page.njk');
   eleventyConfig.addLayoutAlias('home', 'home.njk');
-  eleventyConfig.addLayoutAlias('blog', 'blog.njk');
+  eleventyConfig.addLayoutAlias('trialFeed', 'trialFeed.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
 
   // 	---------------------  Custom filters -----------------------
@@ -85,7 +88,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
   // 	--------------------- Custom collections -----------------------
-  eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('trials', getAllTrials);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

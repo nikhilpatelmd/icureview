@@ -3,9 +3,9 @@ const package = require('../../package.json');
 module.exports = {
   pkv: package.version || 'v1',
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  siteName: 'ICU Review',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+    'A living repository of influential literature in critical care medicine',
   siteType: 'Person', // schema
   locale: 'en_US',
   lang: 'en',
