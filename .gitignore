@@ -2,6 +2,7 @@
 node_modules
 
 # generated files
+_site
 dist
 src/_includes/css
 src/_includes/scripts
