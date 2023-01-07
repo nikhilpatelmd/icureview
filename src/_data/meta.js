@@ -2,7 +2,7 @@ const package = require('../../package.json');
 
 module.exports = {
   pkv: package.version || 'v1',
-  url: process.env.URL || 'https:icureview.co',
+  url: process.env.URL || 'icureview.co',
   siteName: 'ICU Review',
   siteDescription:
     'A living repository of influential literature in critical care medicine',
@@ -21,7 +21,7 @@ module.exports = {
     twitterCreator: '', // i.e. @author -  twitter profile of the site
     mastodonProfile: '' // i.e. https://front-end.social/@lene - url to your mastodon instance/profile
   },
-  blog: {
+  trials: {
     // this is for the rss feed
     name: 'Trial Summaries',
     description:
