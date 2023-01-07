@@ -13,7 +13,7 @@
       <strong>Published</strong>:</span>{% set definedDate = post.data.datePublished %}
     {% include "partials/date.njk" %}
     {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      {% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
     <p>{{ post.data.pico }}</p>
