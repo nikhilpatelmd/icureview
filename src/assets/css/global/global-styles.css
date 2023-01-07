@@ -53,7 +53,7 @@ blockquote {
   font-size: var(--size-step-2);
 }
 
-blockquote > * + * {
+blockquote>*+* {
   margin-top: var(--space-m-l);
 }
 
@@ -96,7 +96,7 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
+article [href^='http']:not([href*='icureview.co'])::after {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -108,7 +108,8 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
   content: '(external link)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
+  text-indent: 1em;
+  /* the width of the icon */
 }
 
 /* Base selection styles that invert whatever colours are rendered */
