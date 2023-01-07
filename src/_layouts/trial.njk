@@ -5,8 +5,13 @@ layout: base
 <article class="region blog">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
-    <ul class="cluster"></ul>
 
+    <ul class="cluster">
+      {% for item in tags | filterTagList %}
+        <a href="/tag/{{ item | slug }}">{{ item }}</a>
+      {% endfor %}
+    </ul>
+    <ul class="cluster"></ul>
     {% set definedDate = datePublished %}
     <ul class="cluster">
       <li>

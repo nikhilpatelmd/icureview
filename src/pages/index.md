@@ -8,10 +8,8 @@ blog:
   intro: "Latest trial summaries"
 ---
 
-## An Eleventy starter
+Lorem ipsum dolor sit amet. Est saepe facere ea voluptatibus quas ut nemo tempore et veritatis minus! Sed adipisci tempore hic laboriosam excepturi qui quasi quia sed adipisci consequatur et nemo minima et sunt veniam. 
 
-This (opiniated) [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
+Ex voluptatem amet ad natus accusamus sed iste alias ut quas nobis et natus nisi. Ut quisquam quia ut delectus expedita sit quam sunt sit quisquam nulla ea sunt quidem! Quo quisquam architecto ut consequatur voluptas ut quia optio aut voluptatem natus vel galisum molestias et suscipit ullam. 
 
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
-
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+Sit aliquam quia ab esse similique ut esse laborum. Sed fuga placeat nam repellat culpa non alias libero in rerum commodi ut quia voluptatem vel aperiam aliquam qui rerum voluptas. Est omnis quod et nesciunt iusto non voluptate galisum aut galisum facilis. Hic adipisci eligendi vel atque cupiditate et iusto placeat ut suscipit facere et exercitationem impedit et modi consectetur est laudantium fuga. Est deleniti voluptas ad laboriosam magni hic sequi inventore. 

@@ -15,6 +15,6 @@ layout: base
 </header>
 
 <article class="wrapper region">
-  {% set postslist = collections.trials %}
+  {% set postslist = collections[tag] %}
   {% include "partials/post-list.njk" %}
 </article>

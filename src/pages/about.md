@@ -3,20 +3,6 @@ title: About
 permalink: /about/index.html
 description: About this starter
 layout: page
-youtube: true
 ---
 
-Based on the [companion website](https://buildexcellentwebsit.es/) of Andy Bell's talk 'Be the browser’s mentor, not its micromanager'. It takes over a core functionality: Using Tailwind CSS to generate CSS variables based on design tokens.
-
-Like buildexcellentwebsit.es, this starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template, ideal for personal websites and other small projects.
-
-The aim is to hopefully spread the use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
-
-- Find out more on https://buildexcellentwebsit.es/.
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
-
-Edit your preferences (colors, fonts, fluid text sizes etc.) in `src/assets/css/design-tokens`.
-
-## Watch the talk
-
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+<p>Ea rerum dolores id incidunt quia nam maiores sint. Est enim dignissimos quo cupiditate galisum hic omnis Quis non rerum tempora ut necessitatibus tenetur ut possimus tempore! Sit vitae maiores aut nihil tempore sed debitis harum! </p><p>Id obcaecati labore sit voluptatem illum ex dignissimos quaerat est porro quod. Aut voluptatibus quos aut similique quaerat sed illum quidem in nisi porro eos quis voluptas hic internos delectus sit quod sunt. Sed illum odio eum nisi placeat sed Quis adipisci eum quos quidem. </p><p>Ea alias voluptate ut deserunt veniam est facere iusto ea exercitationem iste et totam doloribus! Nam sequi earum quo eveniet commodi et dicta facilis aut quis voluptas. </p>
