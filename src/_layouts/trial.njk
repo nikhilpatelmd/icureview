@@ -1,18 +1,28 @@
 ---
 layout: base
-preloads:
-  href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
-  as: 'font'
-  type: 'font/woff2'
-  crossorigin: true
 ---
 
 <article class="region blog">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
+    <ul class="cluster"></ul>
 
-    {% set definedDate = date %} {% include "partials/date.njk" %}
-
+    {% set definedDate = datePublished %}
+    <ul class="cluster">
+      <li>
+        <strong>Published</strong>: {% include "partials/date.njk" %}</li>
+      <li>
+        <strong>Journal</strong>: {{ journal }}
+      </li>
+      <li>
+        <strong>PMID</strong>
+        <span>:  </span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}">{{ pmid }}</a>
+      </li>
+      <li>
+        <strong>Trial Registration</strong>: <a href="{{ nctLink }}">{{ nctID }}</a>
+      </li>
+    </ol>
     {{ content | safe }}
   </div>
 </article>
