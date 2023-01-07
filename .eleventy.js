@@ -29,14 +29,14 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {getAllPosts} = require('./config/collections/index.js');
+const { getAllPosts } = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
-const {EleventyRenderPlugin} = require('@11ty/eleventy');
+const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const {slugifyString} = require('./config/utils');
-const {escape} = require('lodash');
+const { slugifyString } = require('./config/utils');
+const { escape } = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
@@ -120,7 +120,7 @@ module.exports = eleventyConfig => {
     pathPrefix: '/',
 
     dir: {
-      output: 'dist',
+      output: '_site',
       input: 'src',
       includes: '_includes',
       layouts: '_layouts'
