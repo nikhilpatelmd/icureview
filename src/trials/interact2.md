@@ -69,7 +69,7 @@ Only about 7% of patients were intubated and 3% of patients had an EVD.
 
 **Primary Outcome**: death or major disability at 90 days as defined by **modified Rankin score of 3-6**
 
-{% imagePlaceholder "./src/trials/interact2/interact2Results.png", "INTERACT2 primary outcome results shown with stacked bar plot" %}
+{% imagePlaceholder "./src/assets/images/trials/interact2Results.png", "INTERACT2 primary outcome results shown with stacked bar plot" %}
 
 ## Final Thoughts
 
