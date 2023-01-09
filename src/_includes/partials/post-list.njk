@@ -1,23 +1,7 @@
 <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
   {% for post in postslist %}
-
     <li class="card flow clickable-card overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      <ul class="cluster">
-        {% for item in post.data.categories %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      <strong>Published</strong>:</span>{% set definedDate = post.data.datePublished %}
-    {% include "partials/date.njk" %}
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
-    <p>{{ post.data.pico }}</p>
-  </li>
-{% endfor %}
-
+      {% include "partials/trial-card.njk" %}
+    </li>
+  {% endfor %}
 </ul>

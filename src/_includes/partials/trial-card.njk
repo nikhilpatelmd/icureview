@@ -1,0 +1,25 @@
+<div class="smallText">
+  <p class="cardTitle">
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+  </p>
+  <div class>
+    <strong>Published</strong>:</span>{% set definedDate = post.data.datePublished %}
+  {% include "partials/date.njk" %}
+  <ul>
+    {% for tag in post.data.tags | filterTagList %}
+      {% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </ul>
+</div>
+<ul>
+  <li>
+    <strong>Patient population</strong>: {{ post.data.patientPopulation }}</li>
+  <li>
+    <strong>Intervention</strong>: {{ post.data.intervention }}</li>
+  <li>
+    <strong>Comparison</strong>: {{ post.data.comparison }}</li>
+  <li>
+    <strong>Outcome</strong>: {{ post.data.outcome }}</li>
+</ul>
+</div>

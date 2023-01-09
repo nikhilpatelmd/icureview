@@ -8,7 +8,7 @@ layout: base
       <h1 class="text-center">{{ title }}</h1>
     </div>
   </div>
-  {% include 'svg/divider-waves.svg' %}
+  {% include 'svg/divider-edgy.svg' %}
 </header>
 
 <article class="region">
@@ -32,22 +32,8 @@ layout: base
     {% for post in postslist.slice(0, 4) %}
 
       <li class="card flow clickable-card overflow-hidden">
-        <h2>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h2>
-        <ul class="cluster">
-          {% for item in post.data.categories %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        <strong>Published</strong>:</span>{% set definedDate = post.data.datePublished %}
-      {% include "partials/date.njk" %}
-      {% for tag in post.data.tags | filterTagList %}
-        {% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-      {% endfor %}
-      <p>{{ post.data.pico }}</p>
-    </li>
-  {% endfor %}
-</ul>
+        {% include "partials/trial-card.njk" %}
+      </li>
+    {% endfor %}
+  </ul>
 </article>

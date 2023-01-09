@@ -11,7 +11,7 @@ const imageShortcodePlaceholder = async (src, alt, caption, sizes = '100vw') => 
     widths: [400, 700, 1280],
     formats: ['avif', 'webp', 'jpeg'],
     urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/',
+    outputDir: './_site/assets/images/',
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -50,14 +50,13 @@ const imageShortcodePlaceholder = async (src, alt, caption, sizes = '100vw') => 
 				loading = 'lazy'
         decoding="async">
     </picture>
-    ${
-      caption
-        ? `<figcaption class="cluster font-display"><p>${caption}</p>
+    ${caption
+      ? `<figcaption class="cluster font-display"><p>${caption}</p>
 	</figcaption>`
-        : ``
+      : ``
     }
 </figure>`,
-    {collapseWhitespace: true}
+    { collapseWhitespace: true }
   );
 };
 

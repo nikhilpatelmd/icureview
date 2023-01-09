@@ -32,17 +32,17 @@ module.exports = {
     fontSize,
     fontFamily,
     fontWeight: {
-      normal: 400,
-      bold: 700,
+      normal: 300,
+      bold: 600,
       black: 800
     },
-    backgroundColor: ({theme}) => theme('colors'),
-    textColor: ({theme}) => theme('colors'),
-    margin: ({theme}) => ({
+    backgroundColor: ({ theme }) => theme('colors'),
+    textColor: ({ theme }) => theme('colors'),
+    margin: ({ theme }) => ({
       auto: 'auto',
       ...theme('spacing')
     }),
-    padding: ({theme}) => theme('spacing')
+    padding: ({ theme }) => theme('spacing')
   },
   variantOrder: [
     'first',
@@ -69,19 +69,19 @@ module.exports = {
   },
   plugins: [
     // Generates custom property values from tailwind config
-    plugin(function ({addComponents, config}) {
+    plugin(function ({ addComponents, config }) {
       let result = '';
 
       const currentConfig = config();
 
       const groups = [
-        {key: 'colors', prefix: 'color'},
-        {key: 'spacing', prefix: 'space'},
-        {key: 'fontSize', prefix: 'size'},
-        {key: 'fontFamily', prefix: 'font'}
+        { key: 'colors', prefix: 'color' },
+        { key: 'spacing', prefix: 'space' },
+        { key: 'fontSize', prefix: 'size' },
+        { key: 'fontFamily', prefix: 'font' }
       ];
 
-      groups.forEach(({key, prefix}) => {
+      groups.forEach(({ key, prefix }) => {
         const group = currentConfig.theme[key];
 
         if (!group) {
@@ -99,14 +99,14 @@ module.exports = {
     }),
 
     // Generates custom utility classes
-    plugin(function ({addUtilities, config}) {
+    plugin(function ({ addUtilities, config }) {
       const currentConfig = config();
       const customUtilities = [
-        {key: 'spacing', prefix: 'flow-space', property: '--flow-space'},
-        {key: 'colors', prefix: 'spot-color', property: '--spot-color'}
+        { key: 'spacing', prefix: 'flow-space', property: '--flow-space' },
+        { key: 'colors', prefix: 'spot-color', property: '--spot-color' }
       ];
 
-      customUtilities.forEach(({key, prefix, property}) => {
+      customUtilities.forEach(({ key, prefix, property }) => {
         const group = currentConfig.theme[key];
 
         if (!group) {
