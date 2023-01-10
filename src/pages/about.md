@@ -17,3 +17,9 @@ Neurointensivist interested in reading, interpretation, and application of clini
 This is a way to catalog major critical care literature in one place. It also allows me to organize and solidify my thoughts on trials and how to fit within the greater body of literature.
 
 I have no [financial conflicts of interest](https://openpaymentsdata.cms.gov/physician/5701805)from pharmaceutical or medical device companies.
+
+**Why not just read the actual article?**
+I encourage you to do so, but this is a summary of how I think about the trial.
+
+**There's an error in your interpretation or a typo I spotted.**
+I encourage feedback on anything from the site. The contact form is the best way to send me a message.
