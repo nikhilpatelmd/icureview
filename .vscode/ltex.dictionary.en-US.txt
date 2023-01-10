@@ -1,3 +1,5 @@
 multicenter
 Intracerebral
 mmHg
+perihematomal
+mRS

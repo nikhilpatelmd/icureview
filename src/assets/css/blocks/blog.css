@@ -9,7 +9,15 @@
 .blog h3 {
   font-size: var(--size-step-2);
 }
+
 .blog img {
   width: 100%;
   height: auto;
+}
+
+.metadataList {
+  font-size: var(--size-step-0);
+  display: flex;
+  list-style: none;
+  margin: 0em 10em;
 }

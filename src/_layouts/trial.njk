@@ -2,31 +2,36 @@
 layout: base
 ---
 
-<div>
-  <h1 class="gradient-text">{{ title }}</h1>
-  <ul class>
-    {% for item in tags | filterTagList %}
-      <a href="/tag/{{ item | slug }}">{{ item }}</a>
-    {% endfor %}
-  </ul>
-  {% set definedDate = datePublished %}
-  <ul>
-    <li>
-      <strong>Published</strong>: {% include "partials/date.njk" %}</li>
-    <li>
-      <strong>Journal</strong>: {{ journal }}
-    </li>
-    <li>
-      <strong>PMID</strong>
-      <span>:  </span>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}">{{ pmid }}</a>
-    </li>
-    <li>
-      <strong>Trial Registration</strong>: <a href="{{ nctLink }}">{{ nctID }}</a>
-    </li>
-  </ul>
-</div>
-
+<header class="section">
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="prose text-center">
+        <h1>{{ title }}</h1>
+        <ul>
+          {% for item in tags | filterTagList %}
+            <li class="tagButton">
+              <a href="/tag/{{ item | slug }}">{{ item }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% set definedDate = datePublished %}
+        <ul class="metadataList">
+          <li>
+            <strong>Published</strong>: {% include "partials/date.njk" %}</li>
+          <li>
+            <strong>Journal</strong>: {{ journal }}
+          </li>
+          <li>
+            <strong>PMID</strong>: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}">{{ pmid }}</a>
+          </li>
+          <li>
+            <strong>Trial Registration</strong>: <a href="{{ nctLink }}">{{ nctID }}</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</header>
 <article class="region blog">
   <div class="wrapper flow prose">
     {{ content | safe }}
