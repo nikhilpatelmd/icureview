@@ -1,5 +1,5 @@
 ---
-title: INTERACT2
+title: INTERACT-2
 datePublished: "2013-06-20"
 dateModified: "2023-01-06"
 journal: New England Journal of Medicine
@@ -31,6 +31,8 @@ outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
 *[PROBE]: Prospective, Randomized, Open-Label, Blinded End-Point
 *[RRR]: relative risk reduction
 *[ARR]: absolute risk reduction
+*[IV]: intravenous
+
 
 
 ## The Gist
@@ -41,7 +43,7 @@ INTERACT-2 was the first large, multicenter randomized trial to evaluate the eff
 
 At 90 days, 56% of patients in the guideline-recommended group died or were severely disabled, compared to 52% of patients in the intensive-treatment group (OR 0.87, 95% CI 0.75 - 1.01). The results of this trial suggest that **blood pressure lowering to a target of < 140 mmHg probably has a small to moderate effect in reducing death and major disability**.
 
-A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact2/#putting-things-together).
+A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/INTERACT-2/#putting-things-together).
 
 ## Clinical Context
 
@@ -67,26 +69,35 @@ Only about 7% of patients were intubated and 3% of patients had an EVD.
 
 This was an international trial involving > 100 sites with a **PROBE** design.
 
+### Protocol
+
+Patients were randomized to either one of two groups:
+
+**Interventional Group**: intensive blood pressure control with goal SBP < 140. 
+
+This goal was chosen based on previous observational studies demonstrating that a target SBP < 140-150 is associated with less frequent hematoma expansion compared to a target SBP < 160-170.
+
+**Control Group**: guideline-recommended blood pressure control with goal SBP < 180. This was based on contemporary AHA guidelines. No lower limit was specified.
+
+Both groups were recommended to achieve goal SBP **within 1 hour of randomization and maintaining this goal for the next 7 days**. The specific medications used to control blood pressure were left to pre-specified local protocols, although it was recommended that the initial agent used for the intensive treatment group be an IV medication, while the initial one for the guideline treatment group be an oral medication.
+
+All patients were cared for in an acute stroke unit.
+
 ### Power Analysis
 
 The trial was designed to have at least 90% power to detect a **14% RRR** and **7% ARR** in the primary outcome of mRS 3-6 at 90 days, assuming event rates of 50% in the control group and 43% in the intervention group.
 
-
-* Recruiting Period
-* Common management between groups
-* Intervention Arm
-* Control Arm
-* Achieved goal?
-
 ## Results
 
-When examining a trial involving the manipulation of physiologic parameters, it is important to evaluate a few things: (1) were the target goals achieved in each group and (2) was there enough separation between the groups?
+When the clinical question of a trial revolves around manipulating a physiologic parameter, it's important to examine the target and achieved targets of said parameter. 
 
-{% imagePlaceholder "./src/assets/images/trials/interact2s2.png", "INTERACT2 Supplemental Figure 2 describing the achieved blood pressure between the two groups", "Supplemental Figure 2" %}
+In INTERACT-2
+
+{% imagePlaceholder "./src/assets/images/trials/interact2s2.png", "INTERACT-2 Supplemental Figure 2 describing the achieved blood pressure between the two groups", "Supplemental Figure 2" %}
 
 **Primary Outcome**: death or major disability at 90 days as defined by **modified Rankin score of 3-6**
 
-{% imagePlaceholder "./src/assets/images/trials/interact2Results.png", "INTERACT2 primary outcome results shown with stacked bar plot" %}
+{% imagePlaceholder "./src/assets/images/trials/interact2Results.png", "INTERACT-2 primary outcome results shown with stacked bar plot" %}
 
 ## Final Thoughts
 
