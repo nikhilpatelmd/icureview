@@ -33,17 +33,15 @@ outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
 *[ARR]: absolute risk reduction
 *[IV]: intravenous
 
-
-
 ## The Gist
 
 INTERACT-2 was the first large, multicenter randomized trial to evaluate the effect of rapidly lowering blood pressure to a specific target in patients presenting with acute primary ICH.
 
 ‍2839 patients who presented within 6 hours of symptom onset were randomized to achieve a blood pressure target of < 180 mmHg (at the time, considered [guideline-based treatment](https://doi.org/10.1161/STROKEAHA.107.183689)) or < 140 mmHg (intensive blood pressure control).
 
-At 90 days, 56% of patients in the guideline-recommended group died or were severely disabled, compared to 52% of patients in the intensive-treatment group (OR 0.87, 95% CI 0.75 - 1.01). The results of this trial suggest that **blood pressure lowering to a target of < 140 mmHg probably has a small to moderate effect in reducing death and major disability**.
+At 90 days, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group (OR 0.87, 95% CI 0.75 - 1.01). The results of this trial suggest that **blood pressure lowering to a target of < 140 mmHg probably has a small effect in reducing death and major disability in patients presenting with ICH**.
 
-A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/INTERACT-2/#putting-things-together).
+A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#putting-things-together).
 
 ## Clinical Context
 
@@ -83,21 +81,41 @@ Both groups were recommended to achieve goal SBP **within 1 hour of randomizatio
 
 All patients were cared for in an acute stroke unit.
 
+A subset of patients (planned sample size of 600 patients, 300 Asian and 300 non-Asian) underwent repeat brain imaging at 24 hours to evaluate for any differences in hematoma expansion.
+
 ### Power Analysis
 
 The trial was designed to have at least 90% power to detect a **14% RRR** and **7% ARR** in the primary outcome of mRS 3-6 at 90 days, assuming event rates of 50% in the control group and 43% in the intervention group.
 
+### Risk of Bias Analysis
+
 ## Results
 
-When the clinical question of a trial revolves around manipulating a physiologic parameter, it's important to examine the target and achieved targets of said parameter. 
+### Achieved Blood Pressure
 
-In INTERACT-2
+When a trial's main premise depends on manipulating a physiologic parameter, it's important to examine the achieved targets of said parameter. 
+
+In INTERACT-2, there was decent separation between the two groups as shown in the supplemental figure below. Note that the patients in the guideline treatment group had a mean SBP of around 150 mmHg, drastically lower than the < 180 mmHg target. This likely reflects that clinicians were already targeting an SBP goal lower than the AHA recommended level prior to the start of this trial (or they were influenced by the results of the pilot INTERACT trial).
 
 {% imagePlaceholder "./src/assets/images/trials/interact2s2.png", "INTERACT-2 Supplemental Figure 2 describing the achieved blood pressure between the two groups", "Supplemental Figure 2" %}
 
-**Primary Outcome**: death or major disability at 90 days as defined by **modified Rankin score of 3-6**
+### Death or Major Disability
 
-{% imagePlaceholder "./src/assets/images/trials/interact2Results.png", "INTERACT-2 primary outcome results shown with stacked bar plot" %}
+The primary outcome of **mRS at 90 days** after symptom onset was dichotomized between 0-2 (good outcome) versus 3-6 (poor outcome). When analyzed this way, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group, resulting in an OR 0.87 (95% CI 0.75 - 1.01). 
+
+One of the secondary outcomes analyzed the entire mRS as an ordinal regression. When analyzed this way, the results were similar: cOR 0.87 (95% CI 0.77 - 1.00).
+
+**Regardless of the method used to analyze the mRS, the results are consistent with a small benefit of intensive blood pressure lowering to reduce the risk of death or major disability.**
+
+{% imagePlaceholder "./src/assets/images/trials/interact2Results.png", "INTERACT-2 primary outcome results shown with stacked bar plot", "Primary outcome results"%}
+
+### Hematoma Expansion
+
+The mechanism by which acute blood pressure lowering is thought to work is through the reduction in hematoma expansion. The trial protocol pre-specified a substudy of 600 patients with repeat imaging to evaluate hematoma expansion. 
+
+There were 473 (guideline treatment group) and 491 (intensive treatment group) patients with repeat imaging available. 
+
+
 
 ## Final Thoughts
 
