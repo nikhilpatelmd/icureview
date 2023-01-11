@@ -32,6 +32,8 @@ outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
 *[RRR]: relative risk reduction
 *[ARR]: absolute risk reduction
 *[IV]: intravenous
+*[RCT]: randomized, controlled trial
+
 
 ## The Gist
 
@@ -71,11 +73,9 @@ This was an international trial involving > 100 sites with a **PROBE** design.
 
 Patients were randomized to either one of two groups:
 
-**Interventional Group**: intensive blood pressure control with goal SBP < 140. 
+**Interventional Group: intensive blood pressure control with goal SBP < 140.** This goal was chosen based on previous observational studies demonstrating that a target SBP < 140-150 is associated with less frequent hematoma expansion compared to a target SBP < 160-170.
 
-This goal was chosen based on previous observational studies demonstrating that a target SBP < 140-150 is associated with less frequent hematoma expansion compared to a target SBP < 160-170.
-
-**Control Group**: guideline-recommended blood pressure control with goal SBP < 180. This was based on contemporary AHA guidelines. No lower limit was specified.
+**Control Group: guideline-recommended blood pressure control with goal SBP < 180.** This was based on contemporary AHA guidelines. No lower limit was specified.
 
 Both groups were recommended to achieve goal SBP **within 1 hour of randomization and maintaining this goal for the next 7 days**. The specific medications used to control blood pressure were left to pre-specified local protocols, although it was recommended that the initial agent used for the intensive treatment group be an IV medication, while the initial one for the guideline treatment group be an oral medication.
 
@@ -86,6 +86,8 @@ A subset of patients (planned sample size of 600 patients, 300 Asian and 300 non
 ### Power Analysis
 
 The trial was designed to have at least 90% power to detect a **14% RRR** and **7% ARR** in the primary outcome of mRS 3-6 at 90 days, assuming event rates of 50% in the control group and 43% in the intervention group.
+
+While many trials are overly optimistic about the proposed effect size, I believe aiming for a 7% ARR is a reasonable expectation in this case. 
 
 ### Risk of Bias Analysis
 
@@ -111,24 +113,49 @@ One of the secondary outcomes analyzed the entire mRS as an ordinal regression. 
 
 ### Hematoma Expansion
 
-The mechanism by which acute blood pressure lowering is thought to work is through the reduction in hematoma expansion. The trial protocol pre-specified a substudy of 600 patients with repeat imaging to evaluate hematoma expansion. 
+The mechanism by which acute blood pressure lowering is thought to work is through the reduction in hematoma expansion. The trial protocol pre-specified a sub-study of 600 patients with repeat imaging to evaluate hematoma expansion. 
 
 There were 473 (guideline treatment group) and 491 (intensive treatment group) patients with repeat imaging available. 
 
+The study was unable to find evidence of a difference in hematoma growth at 24 hours with the current sample size. 
 
+### Safety Outcomes
+
+The study was unable to find evidence of a difference in neurologic deterioration in the first 24 hours or other adverse events.
 
 ## Final Thoughts
 
-Blood Pressure trials or similar interventions are hard to conduct
+INTERACT-2 was a major achievement, being the first RCT to attempt to answer the question of the optimal blood pressure target in patients with ICH. It was a well-powered, well-conducted study that has subsequently influenced practice and guideline recommendations.
 
-People already had strong feelings about this given that the average BP was not much higher than 150 mmHg
+There are a few points worth further discussion:
 
-While p-value did not cross the magical 0.05 threshold, the results were consistent with a beneficial effect of intensive blood pressure.
+**Concluding that this study suggests no difference between groups based on the p value for the primary outcome being > 0.05 is incorrect.**
+This is a common "absence of evidence does not equal evidence of absence" mistake.  It ignores that the confidence intervals are largely compatible with a beneficial effect of intensive blood pressure control. See this post for further details and discussion.
 
-Don't know what to do with the QoL measures, as they were missing for many patients, and this likely was not at random.
+**Despite being on opposite ends of the "0.05 threshold," analyzing the mRS results using an ordinal regression are consistent with the results of the dichotomized primary outcome. It was also pre-specified in the trial protocol and not added post-hoc.**
 
-Who are these people giving mannitol to patients that don't have IVH, are not intubated, and seem to have a fine GCS?
+The results of the analysis are similar when analyzing the mRS as a dichotomous variable or as an ordinal variable:
 
-Hematoma expansion was not "significantly" reduced in the intensive group, but this may have been under powered.
+(figure with ORs of both)
 
-### Putting Things Together
+The differences between a p-value of 0.04 and 0.06 are not "significantly" different as the 95% CIs suggest.
+
+Some readers have suggested that the ordinal regression was added after the trial had started. In fact, its use was prespecified in the protocol as a secondary outcome. See the [supplement from the NEJM page](https://doi.org/{{ doi }}).
+
+**While there appears to be a probable benefit to intensive blood pressure control, the effect size is likely small.**
+That's okay. It can still be important and worthwhile to do. You have to pick a blood pressure target anyway, and most of these patients will end up in the ICU, so more intensive blood pressure control is not a marginally expensive task.
+
+It may be more important to control blood pressure in certain scenarios, such as patients who are at highest risk of hematoma expansion (present early, have deep location of ICH, or have a coagulopathy).
+
+**The effect size could have been limited by the narrow differences in achieved blood pressure between groups.**
+Clinicians likely had strong feelings about the intensive blood pressure control before the start of this study. This is reflected in the mean achieved SBP in the guideline treatment group being 150 mmHg, well below the recommended goal of < 180 mmHg. This is not a flaw in the study, but may have dampened the observed treatment effect by limiting the differences between groups.
+
+**The lack of clear signal of a reduction in hematoma expansion is puzzling but may be due to decreased statistical power.**
+
+
+
+**How do we reconcile the results with other studies?**
+
+
+## Further Reading
+
