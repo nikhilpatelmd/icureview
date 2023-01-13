@@ -31,7 +31,7 @@ const {
   liteYoutube
 } = require('./config/shortcodes/index.js');
 
-// module import collections
+// Module Import collections from config
 const { getAllTrials } = require('./config/collections/index.js');
 
 // plugins
