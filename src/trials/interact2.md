@@ -34,6 +34,9 @@ outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
 *[IV]: intravenous
 *[RCT]: randomized, controlled trial
 
+{:toc}
+
+
 
 ## The Gist
 
