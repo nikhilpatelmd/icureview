@@ -1,3 +1,0 @@
-const readingTime = require('eleventy-plugin-reading-time');
-
-module.exports = readingTime;

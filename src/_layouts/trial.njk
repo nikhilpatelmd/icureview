@@ -34,10 +34,10 @@ layout: base
 </header>
 <article class="region blog">
   <div class="wrapper flow prose">
-    <span>Reading time: {{ content| readingTime | safe }}
-    </span>
-    {{ content | safe }}
-  </div>
+    <span>{{ helpers.getReadingTime(content) }} minute read</span>
+  </span>
+  {{ content | safe }}
+</div>
 </article>
 
 <!-- include blogpost schema  -->

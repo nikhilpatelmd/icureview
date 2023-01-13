@@ -21,7 +21,6 @@ const {
   mdInline
 } = require('./config/filters/index.js');
 
-const readingTime = require('eleventy-plugin-reading-time');
 const pluginTOC = require('eleventy-plugin-toc')
 
 // module import shortcodes
@@ -31,7 +30,7 @@ const {
   liteYoutube
 } = require('./config/shortcodes/index.js');
 
-// module import collections
+// Module Import collections from config
 const { getAllTrials } = require('./config/collections/index.js');
 
 // plugins
@@ -116,7 +115,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginTOC);
 
   // 	--------------------- Passthrough File Copy -----------------------

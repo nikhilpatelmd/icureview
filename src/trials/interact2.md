@@ -14,6 +14,7 @@ patientPopulation: Acute primary ICH with SBP 150-220 mmHg within 6 hours of sym
 intervention: Target SBP < 140 mmHg
 comparison: Target SBP < 180 mmHg
 outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
+pico: "In patients presenting with acute primary ICH with an SBP of 150-220 mmHg within 6 hours of symptom onset, does intensive blood pressure lowering to a target of < 140 mmHg reduce the risk of death or major disability at 90 days as compared to a target SBP < 180 mmHg?"
 ---
 
 *[ICH]: intracerebral hemorrhage

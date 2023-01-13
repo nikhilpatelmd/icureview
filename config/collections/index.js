@@ -1,7 +1,7 @@
-/** Returns all trials as a collection. */
+// Trials
 const getAllTrials = collection => {
-  const projects = collection.getFilteredByGlob('./src/trials/*.md');
-  return projects.reverse();
+  const trials = collection.getFilteredByGlob('./src/trials/**/*.md');
+  return trials.reverse();
 };
 
 module.exports = {
