@@ -21,7 +21,6 @@ const {
   mdInline
 } = require('./config/filters/index.js');
 
-const readingTime = require('eleventy-plugin-reading-time');
 const pluginTOC = require('eleventy-plugin-toc')
 
 // module import shortcodes
@@ -116,12 +115,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginTOC);
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
-  ['src/assets/fonts/', 'src/assets/images/'].forEach(path =>
+  ['src/assets/fonts/*', 'src/assets/images/'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 

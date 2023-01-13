@@ -71,5 +71,11 @@ module.exports = {
    */
   filterCollectionByKeys(collection, keys) {
     return collection.filter(x => keys.includes(x.data.key));
+  },
+  // reading time filter
+  getReadingTime(text) {
+    const wordsPerMinute = 200;
+    const numberOfWords = text.split(/\s/g).length;
+    return Math.ceil(numberOfWords / wordsPerMinute);
   }
 };
