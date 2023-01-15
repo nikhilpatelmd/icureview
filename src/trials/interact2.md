@@ -35,9 +35,8 @@ pico: "In patients presenting with acute primary ICH with an SBP of 150-220 mmHg
 *[IV]: intravenous
 *[RCT]: randomized, controlled trial
 
+
 {:toc}
-
-
 
 ## The Gist
 
