@@ -1,15 +1,17 @@
 .prose {
   --flow-space: var(--space-m-l);
   --wrapper-max-width: 55rem;
+  letter-spacing: 0.02em;
 }
 
-.prose :is(h2, h3, h4) + * {
+.prose :is(h2, h3, h4)+* {
   --flow-space: var(--space-s-m);
 }
 
 .prose .heading-anchor:is(:hover, :focus) {
   text-decoration: underline;
 }
+
 .prose .heading-anchor {
   text-decoration: none;
 }

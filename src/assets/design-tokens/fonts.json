@@ -6,7 +6,7 @@
       "name": "Display",
       "description": "System fonts for body copy and globally set text.",
       "value": [
-        "Strawford",
+        "Geomanist",
         "Segoe UI",
         "Roboto",
         "Helvetica Neue",
@@ -18,7 +18,7 @@
       "name": "Base",
       "description": "System fonts for body copy and globally set text.",
       "value": [
-        "Strawford",
+        "Geomanist",
         "Segoe UI",
         "Roboto",
         "Helvetica Neue",
@@ -30,7 +30,7 @@
       "name": "Mono",
       "description": "Expressive sections, like quotes",
       "value": [
-        "Strawford",
+        "Geomanist",
         "monospace"
       ]
     }
