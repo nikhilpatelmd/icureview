@@ -44,7 +44,7 @@ At 90 days, 56% of patients in the guideline treatment group died or were severe
 
 A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#final-thoughts).
 
-{:toc}
+{% include "partials/toc.njk" %}
 
 ## Clinical Context
 
@@ -55,6 +55,8 @@ On the other hand, the potential benefit in reducing blood pressure must be bala
 [Previous AHA/ASA Guidelines](https://doi.org/10.1161/STROKEAHA.107.183689) recommended maintaining an SBP < 180 and/or a MAP < 110 to balance reducing the risk of hematoma expansion and maintaining an adequate cerebral perfusion pressure. However, this was not based on any robust evidence as no high-quality studies had been conducted.
 
 Published in 2013, INTERACT-2 was the first randomized trial to evaluate the safety and efficacy of early intensive lowering of blood pressure on clinical outcomes.
+
+{% aside %} Just testing whatever {% endaside %}
 
 ## Patient Population
 

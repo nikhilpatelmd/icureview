@@ -25,6 +25,7 @@ const pluginTOC = require('eleventy-plugin-toc')
 
 // module import shortcodes
 const {
+  asideShortcode,
   imageShortcodePlaceholder,
   includeRaw,
   liteYoutube
@@ -80,6 +81,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
+  eleventyConfig.addPairedShortcode('aside', asideShortcode);
 
   // 	--------------------- Custom transforms ---------------------
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));

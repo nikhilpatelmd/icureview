@@ -20,6 +20,10 @@
   height: 100%;
 }
 
+.font-display {
+  font-size: var(--size-step-minus1);
+}
+
 .blog aside,
 .blog .table-of-contents {
   --border-width: 0.2rem;
@@ -55,11 +59,11 @@
 }
 
 .blog aside:before {
-  background-image: url('/assets/images/svg/info.svg');
+  background-image: url('/assets/images/info.svg');
 }
 
 .blog .table-of-contents:before {
-  background-image: url('/assets/images/svg/toc.svg');
+  background-image: url('/assets/images/toc.svg');
 }
 
 .blog .toc-list {
