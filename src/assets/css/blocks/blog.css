@@ -59,7 +59,7 @@
 }
 
 .blog .table-of-contents:before {
-  background-image: url('./assets/images/svg/toc.svg');
+  background-image: url('/assets/images/svg/toc.svg');
 }
 
 .blog .toc-list {

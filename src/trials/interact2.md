@@ -68,7 +68,7 @@ Only about 7% of patients were intubated and 3% of patients had an EVD.
 
 ## Study Design
 
-This was an international trial involving > 100 sites with a **PROBE** design.
+This was an international trial involving > 100 sites with a PROBE design.
 
 ### Protocol
 
