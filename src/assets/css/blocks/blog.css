@@ -1,3 +1,8 @@
+.blog .decoration {
+  border: 1px solid var(--color-text);
+  border-radius: var(--border-radius);
+}
+
 .blog h1 {
   font-size: var(--size-step-4);
 }
@@ -12,12 +17,92 @@
 
 .blog img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-.metadataList {
-  font-size: var(--size-step-0);
+.blog aside,
+.blog .table-of-contents {
+  --border-width: 0.2rem;
+  --border: var(--border-width) solid #999;
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding-inline: var(--space-s-m);
+  position: relative;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.blog aside {
+  padding-inline-start: var(--space-l-xl);
+  padding-block: var(--space-s-m);
+}
+
+.blog aside:before,
+.blog .table-of-contents:before {
+  --size: 2.25em;
+  border-radius: 100%;
+  content: '';
   display: flex;
+  font-size: 1.15em;
+  height: 2.15em;
+  left: calc(var(--size) / -2 - var(--border-width) / 2);
+  line-height: 1;
+  position: absolute;
+  top: 1em;
+  width: var(--size);
+  background-color: var(--color-bg);
+}
+
+.blog aside:before {
+  background-image: url('/assets/images/svg/info.svg');
+}
+
+.blog .table-of-contents:before {
+  background-image: url('./assets/images/svg/toc.svg');
+}
+
+.blog .toc-list {
+  line-height: 1.5em;;
+  padding-inline-start: 1.5em;
+}
+
+.blog .toc-list .toc-list {
   list-style: none;
-  margin: 0em 10em;
+  opacity: 0.7;
+  padding-inline-start: 1em;
+}
+
+.blog #skip-toc {
+  transform: translateY(-50%);
+  padding: var(--space-m-) var(--space-s-m);
+}
+
+.blog hr.footnotes-sep {
+  border-top: 1px var(--color-text);
+  width: 100%;
+}
+
+.blog .footnotes {
+  font-size: var(--size-step-0);
+}
+
+.blog .footnote-backref,
+.blog .footnote-ref a {
+  text-decoration: none;
+}
+
+.blog .footnotes a {
+  word-wrap: break-word;
+}
+
+.blog .footnote-ref {
+  opacity: 0.9;
+  font-family: var(--font-mono);
+  color: var(--color-primary);
+}
+
+.blog .footnote-backref {
+  font-size: var(--size-step-1);
+  font-weight: bold;
 }

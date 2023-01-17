@@ -17,7 +17,6 @@ outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
 pico: 'In patients presenting with acute primary ICH with an SBP of 150-220 mmHg within 6 hours of symptom onset, does intensive blood pressure lowering to a target of < 140 mmHg reduce the risk of death or major disability at 90 days as compared to a target SBP < 180 mmHg?'
 ---
 
-{:toc}
 
 *[ICH]: intracerebral hemorrhage
 *[IVH]: intraventricular hemorrhage
@@ -37,8 +36,6 @@ pico: 'In patients presenting with acute primary ICH with an SBP of 150-220 mmHg
 *[IV]: intravenous
 *[RCT]: randomized, controlled trial
 
-## The Gist
-
 INTERACT-2 was the first large, multicenter randomized trial to evaluate the effect of rapidly lowering blood pressure to a specific target in patients presenting with acute primary ICH.
 
 ‍2839 patients who presented within 6 hours of symptom onset were randomized to achieve a blood pressure target of < 180 mmHg (at the time, considered [guideline-based treatment](https://doi.org/10.1161/STROKEAHA.107.183689)) or < 140 mmHg (intensive blood pressure control).
@@ -46,6 +43,8 @@ INTERACT-2 was the first large, multicenter randomized trial to evaluate the eff
 At 90 days, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group (OR 0.87, 95% CI 0.75 - 1.01). The results of this trial suggest that **blood pressure lowering to a target of < 140 mmHg probably has a small effect in reducing death and major disability in patients presenting with ICH**.
 
 A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#final-thoughts).
+
+{:toc}
 
 ## Clinical Context
 

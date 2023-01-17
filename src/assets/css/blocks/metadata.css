@@ -1,0 +1,6 @@
+.metadataList {
+  display: inline-block;
+  padding-inline-start: 0;
+  list-style: none;
+  font-size: var(--size-step-0);
+}

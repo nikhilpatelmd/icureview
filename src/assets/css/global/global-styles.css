@@ -7,7 +7,7 @@
 body {
   color: var(--color-dark);
   background: var(--color-light);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   font-family: var(--font-base);
   line-height: 1.5;
   letter-spacing: var(--tracking);
@@ -48,7 +48,7 @@ h3 {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 blockquote {

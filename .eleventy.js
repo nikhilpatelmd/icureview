@@ -43,9 +43,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 
 module.exports = eleventyConfig => {
-  eleventyConfig.setBrowserSyncConfig({
-    open: true,
-  });
+
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');
@@ -119,9 +117,8 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
-  ['src/assets/fonts/', 'src/assets/images/'].forEach(path =>
-    eleventyConfig.addPassthroughCopy(path)
-  );
+  eleventyConfig.addPassthroughCopy('src/assets/fonts');
+  eleventyConfig.addPassthroughCopy('src/assets/images/');
 
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
@@ -132,9 +129,8 @@ module.exports = eleventyConfig => {
     'src/assets/css/global.css': 'src/_includes/global.css'
   });
 
-  eleventyConfig.addPassthroughCopy("**/*.png");
-
   // 	--------------------- general config -----------------------
+
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
     markdownTemplateEngine: 'njk',
