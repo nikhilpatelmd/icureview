@@ -1,10 +1,10 @@
 {
-  "name": "eleventy-excellent",
+  "name": "icu-review",
   "version": "1.2.1",
   "engines": {
     "node": ">=16.x.x"
   },
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
+  "description": "A living repository of influential literature in critical care medicine",
   "main": ".eleventy.js",
   "scripts": {
     "clean": "rimraf dist",
