@@ -1,21 +1,23 @@
 ---
 title: INTERACT-2
-datePublished: "2013-06-20"
-dateModified: "2023-01-06"
+datePublished: '2013-06-20'
+dateModified: '2023-01-06'
 journal: New England Journal of Medicine
 pmid: 23713578
 doi: 10.1056/NEJMoa1214609
 nctID: NCT00716079
 nctLink: https://clinicaltrials.gov/ct2/show/NCT00716079
 tags:
-- Intracerebral Hemorrhage
-- Blood Pressure
+  - Intracerebral Hemorrhage
+  - Blood Pressure
 patientPopulation: Acute primary ICH with SBP 150-220 mmHg within 6 hours of symptom onset
 intervention: Target SBP < 140 mmHg
 comparison: Target SBP < 180 mmHg
 outcome: 'Death or major disability at 90 days: modified Rankin score 3-6'
-pico: "In patients presenting with acute primary ICH with an SBP of 150-220 mmHg within 6 hours of symptom onset, does intensive blood pressure lowering to a target of < 140 mmHg reduce the risk of death or major disability at 90 days as compared to a target SBP < 180 mmHg?"
+pico: 'In patients presenting with acute primary ICH with an SBP of 150-220 mmHg within 6 hours of symptom onset, does intensive blood pressure lowering to a target of < 140 mmHg reduce the risk of death or major disability at 90 days as compared to a target SBP < 180 mmHg?'
 ---
+
+{:toc}
 
 *[ICH]: intracerebral hemorrhage
 *[IVH]: intraventricular hemorrhage
@@ -35,9 +37,6 @@ pico: "In patients presenting with acute primary ICH with an SBP of 150-220 mmHg
 *[IV]: intravenous
 *[RCT]: randomized, controlled trial
 
-
-{:toc}
-
 ## The Gist
 
 INTERACT-2 was the first large, multicenter randomized trial to evaluate the effect of rapidly lowering blood pressure to a specific target in patients presenting with acute primary ICH.
@@ -46,13 +45,13 @@ INTERACT-2 was the first large, multicenter randomized trial to evaluate the eff
 
 At 90 days, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group (OR 0.87, 95% CI 0.75 - 1.01). The results of this trial suggest that **blood pressure lowering to a target of < 140 mmHg probably has a small effect in reducing death and major disability in patients presenting with ICH**.
 
-A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#putting-things-together).
+A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#final-thoughts).
 
 ## Clinical Context
 
-The onset of ICH is often accompanied by an acute hypertensive response, which can reach very high levels and is associated with hematoma expansion and poor outcome. This relationship led to the theory that rapidly lowering blood pressure may reduce the risk of hematoma expansion and thus lower the risk of a poor outcome. 
+The onset of ICH is often accompanied by an acute hypertensive response, which can reach very high levels and is associated with hematoma expansion and poor outcome. This relationship led to the theory that rapidly lowering blood pressure may reduce the risk of hematoma expansion and thus lower the risk of a poor outcome.
 
-On the other hand, the potential benefit in reducing blood pressure must be balanced with the perceived risk of worsening cerebral perfusion, especially in patients with longstanding hypertension. 
+On the other hand, the potential benefit in reducing blood pressure must be balanced with the perceived risk of worsening cerebral perfusion, especially in patients with longstanding hypertension.
 
 [Previous AHA/ASA Guidelines](https://doi.org/10.1161/STROKEAHA.107.183689) recommended maintaining an SBP < 180 and/or a MAP < 110 to balance reducing the risk of hematoma expansion and maintaining an adequate cerebral perfusion pressure. However, this was not based on any robust evidence as no high-quality studies had been conducted.
 
@@ -90,7 +89,7 @@ A subset of patients (planned sample size of 600 patients, 300 Asian and 300 non
 
 The trial was designed to have at least 90% power to detect a **14% RRR** and **7% ARR** in the primary outcome of mRS 3-6 at 90 days, assuming event rates of 50% in the control group and 43% in the intervention group.
 
-While many trials are overly optimistic about the proposed effect size, I believe aiming for a 7% ARR is a reasonable expectation in this case. 
+While many trials are overly optimistic about the proposed effect size, I believe aiming for a 7% ARR is a reasonable expectation in this case.
 
 ### Risk of Bias Analysis
 
@@ -98,7 +97,7 @@ While many trials are overly optimistic about the proposed effect size, I believ
 
 ### Achieved Blood Pressure
 
-When a trial's main premise depends on manipulating a physiologic parameter, it's important to examine the achieved targets of said parameter. 
+When a trial's main premise depends on manipulating a physiologic parameter, it's important to examine the achieved targets of said parameter.
 
 In INTERACT-2, there was decent separation between the two groups as shown in the supplemental figure below. Note that the patients in the guideline treatment group had a mean SBP of around 150 mmHg, drastically lower than the < 180 mmHg target. This likely reflects that clinicians were already targeting an SBP goal lower than the AHA recommended level prior to the start of this trial (or they were influenced by the results of the pilot INTERACT trial).
 
@@ -106,7 +105,7 @@ In INTERACT-2, there was decent separation between the two groups as shown in th
 
 ### Death or Major Disability
 
-The primary outcome of **mRS at 90 days** after symptom onset was dichotomized between 0-2 (good outcome) versus 3-6 (poor outcome). When analyzed this way, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group, resulting in an OR 0.87 (95% CI 0.75 - 1.01). 
+The primary outcome of **mRS at 90 days** after symptom onset was dichotomized between 0-2 (good outcome) versus 3-6 (poor outcome). When analyzed this way, 56% of patients in the guideline treatment group died or were severely disabled, compared to 52% of patients in the intensive treatment group, resulting in an OR 0.87 (95% CI 0.75 - 1.01).
 
 One of the secondary outcomes analyzed the entire mRS as an ordinal regression. When analyzed this way, the results were similar: cOR 0.87 (95% CI 0.77 - 1.00).
 
@@ -116,11 +115,11 @@ One of the secondary outcomes analyzed the entire mRS as an ordinal regression. 
 
 ### Hematoma Expansion
 
-The mechanism by which acute blood pressure lowering is thought to work is through the reduction in hematoma expansion. The trial protocol pre-specified a sub-study of 600 patients with repeat imaging to evaluate hematoma expansion. 
+The mechanism by which acute blood pressure lowering is thought to work is through the reduction in hematoma expansion. The trial protocol pre-specified a sub-study of 600 patients with repeat imaging to evaluate hematoma expansion.
 
-There were 473 (guideline treatment group) and 491 (intensive treatment group) patients with repeat imaging available. 
+There were 473 (guideline treatment group) and 491 (intensive treatment group) patients with repeat imaging available.
 
-The study was unable to find evidence of a difference in hematoma growth at 24 hours with the current sample size. 
+The study was unable to find evidence of a difference in hematoma growth at 24 hours with the current sample size.
 
 ### Safety Outcomes
 
@@ -133,7 +132,7 @@ INTERACT-2 was a major achievement, being the first RCT to attempt to answer the
 There are a few points worth further discussion:
 
 **Concluding that this study suggests no difference between groups based on the p value for the primary outcome being > 0.05 is incorrect.**
-This is a common "absence of evidence does not equal evidence of absence" mistake.  It ignores that the confidence intervals are largely compatible with a beneficial effect of intensive blood pressure control. See this post for further details and discussion.
+This is a common "absence of evidence does not equal evidence of absence" mistake. It ignores that the confidence intervals are largely compatible with a beneficial effect of intensive blood pressure control. See this post for further details and discussion.
 
 **Despite being on opposite ends of the "0.05 threshold," analyzing the mRS results using an ordinal regression are consistent with the results of the dichotomized primary outcome. It was also pre-specified in the trial protocol and not added post-hoc.**
 
@@ -155,10 +154,6 @@ Clinicians likely had strong feelings about the intensive blood pressure control
 
 **The lack of clear signal of a reduction in hematoma expansion is puzzling but may be due to decreased statistical power.**
 
-
-
 **How do we reconcile the results with other studies?**
 
-
 ## Further Reading
-
