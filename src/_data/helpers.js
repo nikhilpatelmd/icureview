@@ -74,7 +74,7 @@ module.exports = {
   },
   // reading time filter
   getReadingTime(text) {
-    const wordsPerMinute = 200;
+    const wordsPerMinute = 175;
     const numberOfWords = text.split(/\s/g).length;
     return Math.ceil(numberOfWords / wordsPerMinute);
   }

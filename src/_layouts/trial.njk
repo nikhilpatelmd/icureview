@@ -2,42 +2,56 @@
 layout: base
 ---
 
-<header class="section">
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1>{{ title }}</h1>
-        <ul>
-          {% for item in tags | filterTagList %}
-            <li class="tagButton">
-              <a href="/tag/{{ item | slug }}">{{ item }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-        {% set definedDate = datePublished %}
-        <ul class="metadataList">
-          <li>
-            <strong>Published</strong>: {% include "partials/date.njk" %}</li>
-          <li>
-            <strong>Journal</strong>: {{ journal }}
-          </li>
-          <li>
-            <strong>PMID</strong>: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}">{{ pmid }}</a>
-          </li>
-          <li>
-            <strong>Trial Registration</strong>: <a href="{{ nctLink }}">{{ nctID }}</a>
-          </li>
-        </ul>
-      </section>
+<article
+id="{{ title | slugify }}" 
+class="region blog | h-entry"
+style="--region-space-top: var(--space-4xl)"
+  >
+  <div class="wrapper flow content">
+    <h1 class="gradient-text | p-name">{{ title }}</h1>
+    <ul>
+      {% for item in tags | filterTagList %}
+        <li class="tagButton">
+          <a href="/tag/{{ item | slug }}">{{ item }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <dl class="meta">
+      <!-- date -->
+      {% set definedDate = datePublished %}
+      <dt>
+        Published:
+      </dt>
+      <dd>{% include "partials/date.njk" %}</dd>
+      <dt>
+        Journal:
+      </dt>
+      <dd>{{ journal }}</dd>
+      <dt>
+        PMID:
+      </dt>
+      <dd>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}" target="_blank" rel="noopener noreferrer">{{ pmid }}</a>
+      </dd>
+      <dt>
+        DOI:
+      </dt>
+      <dd>
+        <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
+      </dd>
+      <dt>
+        Reading time:
+      </dt>
+      <dd>{{ helpers.getReadingTime(content) }} minutes
+        </dd>
+    </dl>
+    <div class="flow e-content">
+      <div class="flow gist">{{ gist | md | safe }}</div>
+      {% include "partials/toc.njk" %}
+      {{ content | safe }}
     </div>
   </div>
-</header>
-<article class="region blog">
-  <div class="wrapper flow prose">
-    <span>{{ helpers.getReadingTime(content) }} minute read</span>
-  </span>
-  {{ content | safe }}
-</div>
+
 </article>
 
 <!-- include blogpost schema  -->

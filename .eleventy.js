@@ -21,7 +21,6 @@ const {
   mdInline
 } = require('./config/filters/index.js');
 
-const pluginTOC = require('eleventy-plugin-toc')
 
 // module import shortcodes
 const {
@@ -42,6 +41,8 @@ const { slugifyString } = require('./config/utils');
 const { escape } = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
+const pluginTOC = require('eleventy-plugin-toc')
+
 
 module.exports = eleventyConfig => {
 
@@ -75,6 +76,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
+
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);

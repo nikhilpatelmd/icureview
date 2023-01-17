@@ -37,6 +37,14 @@
   background-color: var(--color-bg);
 }
 
+.toc > ol {
+  padding-inline-start: var(--space-s-m);;
+}
+
+.toc > ol > li > ol {
+  list-style: none;
+}
+
 .blog aside {
   padding-inline-start: var(--space-l-xl);
   padding-block: var(--space-s-m);
@@ -109,4 +117,10 @@
 .blog .footnote-backref {
   font-size: var(--size-step-1);
   font-weight: bold;
+}
+
+.gist {
+  background-color: white;
+  padding: var(--space-s);
+  border-radius: 1rem;
 }

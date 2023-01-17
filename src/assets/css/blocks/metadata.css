@@ -1,6 +1,33 @@
-.metadataList {
-  display: inline-block;
-  padding-inline-start: 0;
-  list-style: none;
+.meta {
+  align-items: center;
+  display: flex;
   font-size: var(--size-step-0);
+  gap: .1rem;
+}
+
+/*
+based on SIDEBAR
+More info: https://every-layout.dev/layouts/sidebar/
+*/
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+dt {
+  flex-basis: 10rem;
+  flex-grow: 1;
+  font-weight: 800;
+  opacity: 70%;
+}
+
+dd {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 70%;
+  display: block;
+    opacity: 70%;
 }

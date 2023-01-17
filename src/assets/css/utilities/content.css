@@ -4,16 +4,18 @@
   --wrapper-max-width: 75rem;
   display: grid;
   grid-template-columns:
-    1fr
-    min(48ch, 100%)
-    1fr;
+    1fr min(48ch, 100%) 1fr;
 }
 
-.content > * {
+.content>* {
   grid-column: 2;
 }
 
 .content .breakout {
   width: 100%;
   grid-column: 1 / 4;
+}
+
+.content :is(h2, h3, h4)+* {
+  --flow-space: var(--space-s-m);
 }
