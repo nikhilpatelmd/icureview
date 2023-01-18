@@ -43,6 +43,7 @@
 
 .toc > ol > li > ol {
   list-style: none;
+  padding-inline-start: var(--space-s-m);
 }
 
 .blog aside {
@@ -51,7 +52,7 @@
 }
 
 .blog aside:before,
-.blog .table-of-contents:before {
+.blog .toc:before {
   --size: 2.25em;
   border-radius: 100%;
   content: '';
@@ -59,7 +60,7 @@
   font-size: 1.15em;
   height: 2.15em;
   left: calc(var(--size) / -2 - var(--border-width) / 2);
-  line-height: 1;
+  line-height: 1.5;
   position: absolute;
   top: 1em;
   width: var(--size);
@@ -70,7 +71,7 @@
   background-image: url('/assets/images/info.svg');
 }
 
-.blog .table-of-contents:before {
+.blog .toc:before {
   background-image: url('/assets/images/toc.svg');
 }
 
@@ -82,7 +83,7 @@
 .blog .toc-list .toc-list {
   list-style: none;
   opacity: 0.7;
-  padding-inline-start: 1em;
+  padding-inline-start: 0.5em;
 }
 
 .blog #skip-toc {
