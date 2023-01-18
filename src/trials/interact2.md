@@ -1,15 +1,16 @@
 ---
-title: INTERACT-2
-datePublished: '2013-06-20'
-dateModified: '2023-01-06'
-journal: New England Journal of Medicine
-pmid: 23713578
-doi: 10.1056/NEJMoa1214609
-nctID: NCT00716079
-nctLink: https://clinicaltrials.gov/ct2/show/NCT00716079
+title: "INTERACT-2"
+datePublished: 2013-06-20
+dateModified: 2023-01-17
+journal: "New England Journal of Medicine"
+pmid: "23713578"
+doi: "10.1056/NEJMoa1214609"
+nctID: "NCT00716079"
+nctLink: "https://clinicaltrials.gov/ct2/show/NCT00716079"
 tags:
-  - Intracerebral Hemorrhage
-  - Blood Pressure
+  - "Intracerebral Hemorrhage"
+  - "Blood Pressure"
+fundingSource: "George Institute for Global Health"
 patientPopulation: Acute primary ICH with SBP 150-220 mmHg within 6 hours of symptom onset
 intervention: Target SBP < 140 mmHg
 comparison: Target SBP < 180 mmHg
@@ -23,7 +24,6 @@ At 90 days, 56% of patients in the guideline treatment group died or were severe
 
 A similar trial, [ATACH-2](/trials/atach-2/), was published several years later. While the trial failed to replicate the findings of INTERACT-2, [this may be due to differences in achieved blood pressure and duration of blood pressure control](/trials/interact-2/#final-thoughts)."
 ---
-
 
 *[ICH]: intracerebral hemorrhage
 *[IVH]: intraventricular hemorrhage
@@ -53,21 +53,19 @@ On the other hand, the potential benefit in reducing blood pressure must be bala
 
 Published in 2013, INTERACT-2 was the first randomized trial to evaluate the safety and efficacy of early intensive lowering of blood pressure on clinical outcomes.
 
-{% aside %} Just testing whatever {% endaside %}
-
 ## Patient Population
 
-Patients were included if they presented with an ICH **within 6 hours of onset and had an initial systolic blood pressure of 150-220 mmHg**. Patients were excluded if they had an admission GCS of 3-5, were perceived to have a poor prognosis, or if early hematoma evacuation was planned.
+Patients were included if they presented with an ICH **within 6 hours of onset and had an initial systolic blood pressure of 150-220 mmHg**. They were excluded if they had an admission GCS of 3-5, were perceived to have a poor prognosis, or if early hematoma evacuation was planned.
 
 The mean age of the population was about 63 years of age, with 2/3 being male and 2/3 also being recruited from China. Patients were also recruited from Europe, the United States, India, and South America.
 
-**Most patients had mild ICH**: median GCS was 14 (IQR 12 - 15), median NIHSS was 10 (IQR 6 - 15) and median hematoma volume 11 mL (IQR 6-19) with approximately one-third of bleeds having intraventricular extension and the vast majority with a deep hematoma location (83%).
+**Most patients had mild to moderate ICH**: median GCS was 14 (IQR 12 - 15), median NIHSS was 10 (IQR 6 - 15) and median hematoma volume 11 mL (IQR 6-19) with approximately one-third of bleeds having intraventricular extension and the vast majority with a deep hematoma location (83%). Only about 7% of patients were intubated and 3% of patients had an EVD.
 
-Only about 7% of patients were intubated and 3% of patients had an EVD.
+The average SBP on presentation was 179 mmHg. **This is lower than that seen in ATACH-2, where patients had an average SBP of 200 mmHg.**
 
 ## Study Design
 
-This was an international trial involving > 100 sites with a PROBE design.
+This was a multicenter, international with a PROBE design involving > 100 sites.
 
 ### Protocol
 
