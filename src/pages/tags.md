@@ -16,4 +16,3 @@ permalink: /tag/{{ tag | slugify }}/
 ---
 
 {% set postslist = collections[ tag ]%}
-{% include "partials/post-list.njk" %}

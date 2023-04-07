@@ -14,7 +14,30 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-  {% set postslist = collections[tag] | reverse %}
-  {% include "partials/post-list.njk" %}
+<article class="region" style="--region-space-top: var(--space-s)">
+  <div class="wrapper flow prose">
+    <h2>{{ trial.title }}</h2>
+    <!-- trial intro text is optional. -->
+    {% if trial.intro %}
+      <p>{{ trial.intro }}</p>
+    {% endif %}
+  </div>
+  <!-- TODO: duplicate of trials.njk -->
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.trials %}
+    {% for post in postslist.slice(0, 4) %}
+
+      <li class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h3>
+        {% set definedDate = post.date %}
+        {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </li>
+
+    {% endfor %}
+
+  </ul>
 </article>
