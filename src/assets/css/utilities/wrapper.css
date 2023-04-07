@@ -12,3 +12,10 @@
   padding-right: var(--gutter);
   /* position: relative; */
 }
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  text-align: center;
+  max-inline-size: var(--measure);
+}

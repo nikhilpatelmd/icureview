@@ -37,59 +37,13 @@
   background-color: var(--color-bg);
 }
 
-.toc > ol {
-  padding-inline-start: var(--space-s-m);;
-}
-
-.toc > ol > li > ol {
-  list-style: none;
-  padding-inline-start: var(--space-s-m);
-}
 
 .blog aside {
   padding-inline-start: var(--space-l-xl);
   padding-block: var(--space-s-m);
 }
 
-.blog aside:before,
-.blog .toc:before {
-  --size: 2.25em;
-  border-radius: 100%;
-  content: '';
-  display: flex;
-  font-size: 1.15em;
-  height: 2.15em;
-  left: calc(var(--size) / -2 - var(--border-width) / 2);
-  line-height: 1.5;
-  position: absolute;
-  top: 1em;
-  width: var(--size);
-  background-color: var(--color-bg);
-}
 
-.blog aside:before {
-  background-image: url('/assets/images/info.svg');
-}
-
-.blog .toc:before {
-  background-image: url('/assets/images/toc.svg');
-}
-
-.blog .toc-list {
-  line-height: 1.5em;;
-  padding-inline-start: 1.5em;
-}
-
-.blog .toc-list .toc-list {
-  list-style: none;
-  opacity: 0.7;
-  padding-inline-start: 0.5em;
-}
-
-.blog #skip-toc {
-  transform: translateY(-50%);
-  padding: var(--space-m-) var(--space-s-m);
-}
 
 .blog hr.footnotes-sep {
   border-top: 1px var(--color-text);

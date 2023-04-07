@@ -1,14 +1,44 @@
 ---
 layout: base
+schema: blog
 ---
 
 <article class="region blog">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
-
-    {% set definedDate = date %}
-    {% include "partials/date.njk" %}
-
-    {{ content | safe }}
+    <dl class="meta">
+      <!-- date -->
+      {% set definedDate = datePublished %}
+      <dt>
+        Published:
+      </dt>
+      <dd>{% include "partials/date.njk" %}</dd>
+      <dt>
+        Journal:
+      </dt>
+      <dd>{{ journal }}</dd>
+      <dt>
+        PMID:
+      </dt>
+      <dd>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}" target="_blank" rel="noopener noreferrer">{{ pmid }}</a>
+      </dd>
+      <dt>
+        DOI:
+      </dt>
+      <dd>
+        <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
+      </dd>
+      <dt>
+        Reading time:
+      </dt>
+      <dd>{{ helpers.getReadingTime(content) }} minutes
+        </dd>
+    </dl>
+    <div class="flow e-content">
+      <div class="flow gist">{{ gist | md | safe }}</div>
+      {% include "partials/toc.njk" %}
+      {{ content | safe }}
+    </div>
   </div>
 </article>
