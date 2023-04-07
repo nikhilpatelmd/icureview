@@ -9,9 +9,9 @@ pagination:
     - posts
     - tagList
   addAllPagesToCollections: true
-layout: 'tagFeed'
+layout: 'tags'
 eleventyComputed:
-  title: "{{ tag }}"
+  title: '{{ tag }}'
 permalink: /tag/{{ tag | slugify }}/
 ---
 

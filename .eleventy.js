@@ -54,8 +54,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('page', 'page.njk');
   eleventyConfig.addLayoutAlias('home', 'home.njk');
-  eleventyConfig.addLayoutAlias('trialFeed', 'trialFeed.njk');
-  eleventyConfig.addLayoutAlias('tagFeed', 'tagFeed.njk');
+  eleventyConfig.addLayoutAlias('trials', 'trials.njk');
+  eleventyConfig.addLayoutAlias('tags', 'tags.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
 
   // 	---------------------  Custom filters -----------------------
