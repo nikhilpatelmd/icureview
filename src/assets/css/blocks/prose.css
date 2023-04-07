@@ -3,14 +3,13 @@
   --wrapper-max-width: 55rem;
 }
 
-.prose :is(h2, h3, h4)+* {
+.prose :is(h2, h3, h4) + * {
   --flow-space: var(--space-s-m);
 }
 
 .prose .heading-anchor:is(:hover, :focus) {
   text-decoration: underline;
 }
-
 .prose .heading-anchor {
   text-decoration: none;
 }

@@ -9,8 +9,12 @@ body {
   background: var(--color-light);
   font-size: var(--size-step-0);
   font-family: var(--font-base);
-  line-height: 1.5;
+  line-height: 1.55;
   letter-spacing: var(--tracking);
+}
+
+strong {
+  font-weight: 600;
 }
 
 /* Base typesetting */
@@ -20,6 +24,7 @@ h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
   font-family: var(--font-display);
+  font-weight: 700;
 }
 
 h1 {
@@ -38,7 +43,7 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: 50ch;
+  max-width: 80ch;
 }
 
 h1,
@@ -47,17 +52,13 @@ h3 {
   max-width: 20ch;
 }
 
-strong {
-  font-weight: 800;
-}
-
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
   padding: var(--space-m-l);
   font-size: var(--size-step-2);
 }
 
-blockquote>*+* {
+blockquote > * + * {
   margin-top: var(--space-m-l);
 }
 
@@ -100,7 +101,7 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='icureview.co'])::after {
+article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -112,8 +113,7 @@ article [href^='http']:not([href*='icureview.co'])::after {
   content: '(external link)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em;
-  /* the width of the icon */
+  text-indent: 1em; /* the width of the icon */
 }
 
 /* Base selection styles that invert whatever colours are rendered */

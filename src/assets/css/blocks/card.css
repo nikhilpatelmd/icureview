@@ -12,11 +12,6 @@
   background: var(--color-secondary);
 }
 
-.card ::selection {
-  color: var(--color-dark);
-  background: var(--color-secondary);
-}
-
 .card h2 {
   font-size: var(--size-step-3);
 }
@@ -24,10 +19,6 @@
 .card h2 a,
 .card h3 a {
   text-decoration: none;
-}
-
-.card time {
-  opacity: 0.8;
 }
 
 .card:hover,
@@ -39,6 +30,19 @@
   text-decoration: none;
 }
 
+/* 'clickable' */
+
 .card:focus-within a:focus {
   outline: none;
+}
+.card {
+  position: relative;
+}
+.card a:after {
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
