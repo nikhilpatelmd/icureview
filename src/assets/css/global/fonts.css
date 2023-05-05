@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Fig Tree';
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
   font-weight: 600;
   src: local(''), url(/assets/fonts/figtree/figtree-v4-latin-600.woff2) format('woff2'),
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Fig Tree';
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
   font-weight: 700;
   src: local(''), url(/assets/fonts/figtree/figtree-v4-latin-700.woff2) format('woff2'),
