@@ -5,36 +5,35 @@ layout: base
 <header class="section spot-color-primary">
   <div class="section__inner region">
     <div class="wrapper flow">
-      <div class="prose text-center">
-        <h1>{{ title }}</h1>
-        <span class="subheading">{{ description }}</span>
-      </div>
-    </div>
+      <h2 class=>{{ meta.siteDescription }}</h2>
+      <div class="trial summaries">
+        <p>Latest Trial Summaries</p>
+        <ul>
 
+          {% set postslist = collections.trials %}
+          {% for post in postslist.slice(0, 4) %}
+
+            <li>
+              <h3>
+                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+              </h3>
+              {% set definedDate = post.date %}
+              {% include "partials/date.njk" %}
+              <p>{{ post.data.description }}</p>
+              {# <ul>
+                {% set postslist = collections.tag %}
+                {% for post in collections.tag %}
+                  <li>{{ title }}</li>
+                </ul> #}
+            </li>
+          {% endfor %}
+        </ul>
+    </ul>
   </div>
-  {% include 'svg/divider-edgy.svg' %}
+</div>
+
+</div>
+{% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose text-center">
-
-    <span class="subheading">Latest trial summaries</span>
-  </div>
-  <!-- TODO: duplicate of trials.njk -->
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.trials %}
-    {% for post in postslist.slice(0, 4) %}
-
-      <li class="card flow overflow-hidden">
-        <h3>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h3>
-        {% set definedDate = post.date %}
-        {% include "partials/date.njk" %}
-        <p>{{ post.data.description }}</p>
-      </li>
-
-    {% endfor %}
-  </ul>
-</article>
+<article class="region" style="--region-space-top: var(--space-s)"></article>
