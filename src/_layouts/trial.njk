@@ -33,7 +33,12 @@ schema: blog
         Reading time:
       </dt>
       <dd>{{ helpers.getReadingTime(content) }} minutes
-        </dd>
+            {% for tag in tags -%}
+          {% if tag !== 'posts' %}
+            <a class="tag" href="/tag/{{ tag | slug }}">{{ tag }}</a>
+          {% endif %}
+        {%- endfor %}
+      </dd>
     </dl>
     <div class="flow e-content">
       <div class="flow gist">{{ gist | md | safe }}</div>
