@@ -8,11 +8,11 @@ pagination:
     - post
     - posts
     - tagList
+    - trials
+    - trial
   addAllPagesToCollections: true
 layout: 'tags'
 eleventyComputed:
   title: '{{ tag }}'
 permalink: /tag/{{ tag | slugify }}/
 ---
-
-{% set postslist = collections[ tag ]%}

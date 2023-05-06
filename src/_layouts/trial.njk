@@ -34,9 +34,7 @@ schema: blog
       </dt>
       <dd>{{ helpers.getReadingTime(content) }} minutes
             {% for tag in tags -%}
-          {% if tag !== 'posts' %}
-            <a class="tag" href="/tag/{{ tag | slug }}">{{ tag }}</a>
-          {% endif %}
+          <a class="tag" href="/tag/{{ tag | slug }}">{{ tag }}</a>
         {%- endfor %}
       </dd>
     </dl>
