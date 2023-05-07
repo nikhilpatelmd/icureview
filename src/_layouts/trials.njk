@@ -25,6 +25,7 @@ layout: base
         <h3>
           <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h3>
+        {# This seems to mess up the linking to the individual blog post, if I include links to the tags #}
         {# <ul>
           {% for tag in post.data.tags %}
             <li>
