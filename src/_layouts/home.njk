@@ -5,32 +5,31 @@ layout: base
 <header class="section spot-color-primary">
   <div class="section__inner region">
     <div class="wrapper flow">
-      <h2 class=>{{ meta.siteDescription }}</h2>
-      <div class="trial summaries">
+      <h2>{{ meta.siteDescription }}</h2>
+      <div class="wrapper">
         <p>Latest Trial Summaries</p>
-        <ul>
-
+        <ul class "wrapper grid">
           {% set postslist = collections.trials %}
           {% for post in postslist.slice(0, 4) %}
-
-            <li>
-              <h3>
+            <li class = "card flow ">
+              <div class "flex">
                 <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-              </h3>
-
-              {% set definedDate = post.date %}
-              {% include "partials/date.njk" %}
-              <p>{{ post.data.description }}</p>
-              {% for tag in post.data.tags %}
-              <li>
-                <a href="/tag/{{ tag | slug }}/">#{{ tag }}</a>
-              </li>
-            {% endfor %}
-          </li>
-        {% endfor %}
-      </ul>
-  </ul>
-</div>
+                {% set definedDate = post.data.datePublished %}
+                <div>Published: <span>{% include "partials/date.njk" %}</span></div>
+              </div>
+              <ul>
+                {% for tag in post.data.tags %}
+                  <li>
+                    <a href="/tag/{{ tag | slug }}/">#{{ tag }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+              <div>{{ post.data.pico }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+    </ul>
+  </div>
 </div>
 
 </div>
