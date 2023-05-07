@@ -25,18 +25,17 @@ layout: base
         <h3>
           <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h3>
-        <ul>
+        {# <ul>
           {% for tag in post.data.tags %}
             <li>
               <a href="/tag/{{ tag | slug }}/">#{{ tag }}</a>
             </li>
           {% endfor %}
-        </ul>
+        </ul> #}
         {% set definedDate = post.data.datePublished %}
         <p>Published: <span>{% include "partials/date.njk" %}</span></p>
         <p>Journal: <span>{{ post.data.journal }}</span></p>
         <p>{{ post.data.pico }}</p>
-
       </li>
     {% endfor %}
   </ul>
