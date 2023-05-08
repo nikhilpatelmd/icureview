@@ -10,6 +10,7 @@ nctLink: "https://clinicaltrials.gov/ct2/show/NCT00716079"
 tags:
   - "Intracerebral Hemorrhage"
   - "Neurosurgery"
+  - "Craniotomy"
 fundingSource: "George Institute for Global Health"
 patientPopulation: Acute primary ICH with SBP 150-220 mmHg within 6 hours of symptom onset
 intervention: Target SBP < 140 mmHg

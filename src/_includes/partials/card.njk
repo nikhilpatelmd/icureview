@@ -1,0 +1,19 @@
+<li class="card flow overflow-hidden">
+  <h3>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+  </h3>
+
+  {% set definedDate = post.data.datePublished %}
+  <p>
+    <strong>Published</strong>: <span>{% include "partials/date.njk" %}</span></p>
+  <p>
+    <strong>Journal</strong>: <span>{{ post.data.journal }}</span></p>
+  <ul class="unordered-none tag-list">
+    {% for tag in post.data.tags %}
+      <li style="font-size: var(--size-step-code">
+        {{ tag }}
+      </li>
+    {% endfor %}
+  </ul>
+  <p>{{ post.data.pico }}</p>
+</li>

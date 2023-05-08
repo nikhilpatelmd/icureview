@@ -4,30 +4,18 @@ layout: base
 
 <header class="section spot-color-primary">
   <div class="section__inner region">
-    <div class="wrapper flow">
-      <h1>{{ meta.siteDescription }}</h1>
-      <div class="wrapper">
-        <p>Latest Trial Summaries</p>
-        <ul class "wrapper grid">
+    <div class="wrapper grid" data-layout="50-50">
+      <h1 style="font-size: var(--size-step-4)">{{ meta.siteDescription }}</h1>
+      <div>
+        <p style="text-align: right; font-weight: 600">Latest Trial Summaries</p>
+        <ul class="unordered-none flow">
           {% set postslist = collections.trials %}
-          {% for post in postslist.slice(0, 4) %}
-            <li class = "card flow ">
-              <div class "flex">
-                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-                {% set definedDate = post.data.datePublished %}
-                <div>Published: <span>{% include "partials/date.njk" %}</span></div>
-              </div>
-              <ul>
-                {% for tag in post.data.tags %}
-                  <li>
-                    <a href="/tag/{{ tag | slug }}/">#{{ tag }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-              <div>{{ post.data.pico }}</div>
-            </li>
+          {% for post in postslist.slice(0, 3) %}
+            {% include "partials/card-home.njk" %}
           {% endfor %}
         </ul>
+        <p style="text-align: right; font-weight: 600">View all summaries <a href="/trials">here</a>.</p>
+
     </ul>
   </div>
 </div>
