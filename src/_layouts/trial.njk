@@ -39,11 +39,6 @@ schema: blog
         <dd>
           <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
         </dd>
-        <dt>
-        Reading time:
-      </dt>
-        <dd>{{ helpers.getReadingTime(content) }} minutes
-      </dd>
       </dl>
     </div>
     <div>
@@ -54,7 +49,7 @@ schema: blog
 
   <div class="wrapper flow prose e-content">
     <div class="flow">{{ gist | md | safe }}</div>
-    {% include "partials/toc.njk" %}
+    <div class="blah">{% include "partials/toc.njk" %}</div>
     {{ content | safe }}
   </div>
 </article>

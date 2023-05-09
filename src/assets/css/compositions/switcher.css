@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
+  align-items: center;
 }
 
 .switcher>* {
@@ -12,4 +13,8 @@
 .switcher> :nth-last-child(n+ 3),
 .switcher> :nth-last-child(n+ 3)~* {
   flex-basis: 100%;
+}
+
+.switcher > :first-child {
+  align-self: flex-start;
 }

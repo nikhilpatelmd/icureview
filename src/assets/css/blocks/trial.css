@@ -84,8 +84,3 @@
   font-weight: 600;
   font-size: var(--size-step-1);
 }
-
-.meta {
-  grid-column: 1/1;
-  grid-row: 1/1;
-}
