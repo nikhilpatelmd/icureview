@@ -1,7 +1,7 @@
 ---
 title: "STICH-1"
 datePublished: 2013-06-20
-dateModified: 2023-01-17
+dateModified: 2023-05-17
 journal: "New England Journal of Medicine"
 pmid: "23713578"
 doi: "10.1056/NEJMoa1214609"

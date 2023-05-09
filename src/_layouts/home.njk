@@ -10,7 +10,7 @@ layout: base
         <p style="text-align: left; font-size: var(--size-step-code)">Latest Trial Summaries</p>
         <ul class="unordered-none flow">
           {% set postslist = collections.trials %}
-          {% for post in postslist.slice(0, 3) %}
+          {% for post in postslist.slice(0, 3) | sort(attribute = "dateModified") %}
             {% include "partials/card-home.njk" %}
           {% endfor %}
         </ul>
