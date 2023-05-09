@@ -74,12 +74,6 @@
   font-weight: bold;
 }
 
-.gist {
-  background-color: white;
-  padding: var(--space-s);
-  border-radius: 1rem;
-}
-
 .pico {
   font-weight: 600;
   font-size: var(--size-step-1);

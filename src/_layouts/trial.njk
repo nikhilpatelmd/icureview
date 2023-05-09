@@ -44,12 +44,11 @@ schema: blog
     <div>
       <p class="pico">{{ pico }}</p>
     </div>
-
   </header>
 
-  <div class="wrapper flow prose e-content">
-    <div class="flow">{{ gist | md | safe }}</div>
-    <div class="blah">{% include "partials/toc.njk" %}</div>
+  <div class="wrapper flow region prose e-content">
+    <div class="flow gist">{{ gist | md | safe }}</div>
+    <div class="region">{% include "partials/toc.njk" %}</div>
     {{ content | safe }}
   </div>
 </article>
