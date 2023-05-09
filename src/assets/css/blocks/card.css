@@ -65,7 +65,7 @@
 }
 
 .tag-list li {
-  background-color: yellowgreen;
+  background-color:var(--color-primary-glare);
   color: var(--color-dark);
   padding: 0.25em 0.85em;
   border-radius: 0.75em;
