@@ -14,7 +14,7 @@
 
 .card ::selection {
   color: var(--color-dark);
-  background: var(--color-secondary);
+  background: var(--color-primary);
 }
 
 .card h2 {
