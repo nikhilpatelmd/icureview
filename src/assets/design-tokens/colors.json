@@ -16,19 +16,19 @@
     },
     {
       "name": "Primary",
-      "value": "#dc2626"
+      "value": "#ea580c"
     },
     {
       "name": "Primary Glare",
-      "value": "#fca5a5"
+      "value": "#fdba74"
     },
     {
       "name": "Secondary",
-      "value": "#6366f1"
+      "value": "#dc2626"
     },
     {
       "name": "Secondary Glare",
-      "value": "#818cf8"
+      "value": "#fca5a5"
     }
   ]
 }
