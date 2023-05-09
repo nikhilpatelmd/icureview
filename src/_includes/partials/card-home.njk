@@ -1,17 +1,19 @@
-<li class="card flow overflow-hidden">
-  <h2 style="font-size: var(--size-step-2)">
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-  </h2>
+<li class="card card-home flow overflow-hidden flexBetween">
+  <div class="cluster">
+    <h2 style="font-size: var(--size-step-1)">
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
 
-  {% set definedDate = post.data.datePublished %}
+    {% set definedDate = post.data.datePublished %}
 
-  <div style="font-size: var(--size-step-code)">
-    <strong>Published</strong>: {% include "partials/date.njk" %}</div>
-  <span style="font-size: var(--size-step-code)">
-    <strong>Journal</strong>: {{ post.data.journal }}</span>
-  <ul class="unordered-none tag-list">
+    <p style="font-size: var(--size-step-code)">
+      <strong>Published</strong>: {% include "partials/date.njk" %}</p>
+    <p style="font-size: var(--size-step-code)">
+      <strong>Journal</strong>: {{ post.data.journal }}</p>
+  </div>
+  <ul class="unordered-none tag-list cluster">
     {% for tag in post.data.tags %}
-      <li style="font-size: var(--size-step-minus1)">
+      <li style="font-size: var(--size-step-code)">
         {{ tag }}
       </li>
     {% endfor %}
