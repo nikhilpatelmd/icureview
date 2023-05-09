@@ -1,13 +1,13 @@
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s1);
+  gap: var(--space-m-l);
   align-items: center;
 }
 
 .switcher>* {
   flex-grow: 1;
-  flex-basis: calc((30rem - 100%) * 999);
+  flex-basis: calc((40rem - 100%) * 999);
 }
 
 .switcher> :nth-last-child(n+ 3),

@@ -1,12 +1,12 @@
-<li class="card flow overflow-hidden flex-card-column">
+<li class="card flow overflow-hidden">
   <h2 style="font-size: var(--size-step-2)">
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </h2>
 
   {% set definedDate = post.data.datePublished %}
 
-  <span style="font-size: var(--size-step-code)">
-    <strong>Published</strong>: <span>{% include "partials/date.njk" %}</span></span>
+  <div style="font-size: var(--size-step-code)">
+    <strong>Published</strong>: {% include "partials/date.njk" %}</div>
   <span style="font-size: var(--size-step-code)">
     <strong>Journal</strong>: {{ post.data.journal }}</span>
   <ul class="unordered-none tag-list">

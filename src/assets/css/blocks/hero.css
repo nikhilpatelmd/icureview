@@ -1,6 +1,14 @@
-.hero-background {
-  background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)),
-    url("https://uploads-ssl.webflow.com/643c3dfb7d21c0f495bf40a4/643c40296dea096c67464906_patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg");
-    background-position: 0 0, 0 0;
-    background-size: auto, cover;;
+.hero {
+  background-image: linear-gradient(135deg,
+      hsl(16deg 94% 61%) 0%,
+      hsl(15deg 91% 60%) 11%,
+      hsl(14deg 88% 59%) 22%,
+      hsl(12deg 86% 57%) 33%,
+      hsl(11deg 83% 56%) 44%,
+      hsl(9deg 81% 55%) 56%,
+      hsl(8deg 79% 54%) 67%,
+      hsl(5deg 77% 53%) 78%,
+      hsl(3deg 74% 52%) 89%,
+      hsl(0deg 72% 51%) 100%);
+  color: var(--color-light);
 }
