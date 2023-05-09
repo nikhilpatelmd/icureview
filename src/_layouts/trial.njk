@@ -3,46 +3,58 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    <p class="pico">{{ pico }}</p>
-    <dl class="meta">
-      <!-- date -->
-      {% set definedDate = datePublished %}
-      <dt>
+<article class="region blog flow">
+  <header class="wrapper switcher flow">
+    <div class="flow">
+      <div class="cluster">
+        <h1 class="gradient-text">{{ title }}</h1>
+        <ul class="unordered-none tag-list">
+          {% for tag in tags -%}
+            <li>
+              <a class="tag" href="/tag/{{ tag | slug }}">{{ tag }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <dl class="meta">
+        <!-- date -->
+        {% set definedDate = datePublished %}
+        <dt>
         Published:
       </dt>
-      <dd>{% include "partials/date.njk" %}</dd>
-      <dt>
+        <dd>{% include "partials/date.njk" %}</dd>
+        <dt>
         Journal:
       </dt>
-      <dd>{{ journal }}</dd>
-      <dt>
+        <dd>{{ journal }}</dd>
+        <dt>
         PMID:
       </dt>
-      <dd>
-        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}" target="_blank" rel="noopener noreferrer">{{ pmid }}</a>
-      </dd>
-      <dt>
+        <dd>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pmid }}" target="_blank" rel="noopener noreferrer">{{ pmid }}</a>
+        </dd>
+        <dt>
         DOI:
       </dt>
-      <dd>
-        <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
-      </dd>
-      <dt>
+        <dd>
+          <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
+        </dd>
+        <dt>
         Reading time:
       </dt>
-      <dd>{{ helpers.getReadingTime(content) }} minutes
-            {% for tag in tags -%}
-          <a class="tag" href="/tag/{{ tag | slug }}">{{ tag }}</a>
-        {%- endfor %}
+        <dd>{{ helpers.getReadingTime(content) }} minutes
       </dd>
-    </dl>
-    <div class="flow e-content">
-      <div class="flow gist">{{ gist | md | safe }}</div>
-      {% include "partials/toc.njk" %}
-      {{ content | safe }}
+      </dl>
     </div>
+    <div>
+      <p class="pico">{{ pico }}</p>
+    </div>
+
+  </header>
+
+  <div class="wrapper flow prose e-content">
+    <div class="flow">{{ gist | md | safe }}</div>
+    {% include "partials/toc.njk" %}
+    {{ content | safe }}
   </div>
 </article>
