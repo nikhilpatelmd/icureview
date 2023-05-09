@@ -1,18 +1,16 @@
 .gradient-text {
   color: transparent;
-  background: conic-gradient(
-    var(--color-primary) 12%,
-    var(--color-primary) 12%,
-    var(--color-primary) 33%,
-    var(--color-secondary) 33%,
-    var(--color-secondary) 55%,
-    #1471bb 55%,
-    #1471bb 70%,
-    #ff8b59 70%,
-    #ff8b59 87%,
-    #c569bc 87%
-  );
+  background: linear-gradient(135deg,
+      hsl(16deg 94% 61%) 0%,
+      hsl(14deg 91% 61%) 11%,
+      hsl(13deg 87% 60%) 22%,
+      hsl(11deg 84% 59%) 33%,
+      hsl(9deg 81% 59%) 44%,
+      hsl(8deg 77% 58%) 56%,
+      hsl(6deg 74% 58%) 67%,
+      hsl(4deg 70% 57%) 78%,
+      hsl(2deg 67% 56%) 89%,
+      hsl(0deg 64% 55%) 100%);
   padding: 0.6rem 0;
-  background-size: 50%;
   background-clip: text;
 }
