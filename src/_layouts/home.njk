@@ -8,13 +8,12 @@ layout: base
       <h1 style="font-size: var(--size-step-4)">{{ meta.siteDescription }}</h1>
       <div>
         <p style="text-align: left; font-size: var(--size-step-code)">Latest Trial Summaries</p>
-        <ul class="unordered-none flow">
+        <ul class="unordered-none grid" role="list" data-layout="card-home">
           {% set postslist = collections.trials %}
-          {% for post in postslist.slice(0, 3) | sort(attribute = "dateModified") %}
+          {% for post in postslist.slice(0, 3) | sort(attribute = "datePosted") %}
             {% include "partials/card-home.njk" %}
           {% endfor %}
         </ul>
-        <p style="text-align: left; font-size: var(--size-step-code)">View all summaries <a href="/trials">here</a>.</p>
 
     </ul>
   </div>

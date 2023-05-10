@@ -6,21 +6,6 @@
   },
   "items": [
     {
-      "name": "Step min",
-      "min": 2,
-      "max": 4
-    },
-    {
-      "name": "Step code",
-      "min": 16,
-      "max": 18
-    },
-    {
-      "name": "Step minus2",
-      "min": 11.11,
-      "max": 10
-    },
-    {
       "name": "Step minus1",
       "min": 13.33,
       "max": 14.14
@@ -28,7 +13,7 @@
     {
       "name": "Step 0",
       "min": 16,
-      "max": 22
+      "max": 20
     },
     {
       "name": "Step 1",

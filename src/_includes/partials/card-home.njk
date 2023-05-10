@@ -1,21 +1,23 @@
-<li class="card card-home flow overflow-hidden flexBetween">
-  <div class="cluster">
-    <h2 style="font-size: var(--size-step-1)">
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h2>
-
-    {% set definedDate = post.data.datePublished %}
-
-    <p style="font-size: var(--size-step-code)">
-      <strong>Published</strong>: {% include "partials/date.njk" %}</p>
-    <p style="font-size: var(--size-step-code)">
-      <strong>Journal</strong>: {{ post.data.journal }}</p>
-  </div>
+<li class="card card-home flow overflow-hidden">
   <ul class="unordered-none tag-list cluster">
     {% for tag in post.data.tags %}
-      <li style="font-size: var(--size-step-code)">
+      <li style="font-size: var(--size-step-minus1)">
         {{ tag }}
       </li>
     {% endfor %}
   </ul>
+  <div class="region flow" style="--region-space-bottom: var(--space-s)">
+    <h2 style="font-size: var(--size-step-2)">
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+    {% set definedDate = Created %}
+    <p>
+      <strong>Review Posted</strong>: {% include "partials/date.njk" %}</p>
+    {% set definedDate = post.data.datePublished %}
+    <p style="font-size: var(--size-step-minus1)">
+      <strong>Article Published</strong>: {% include "partials/date.njk" %}</p>
+    <p style="font-size: var(--size-step-minus1)">
+      <strong>Journal</strong>: {{ post.data.journal }}</p>
+
+  </div>
 </li>

@@ -1,0 +1,25 @@
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: var(--space-xs);
+  row-gap: var(--space-xs);
+}
+
+.tag-list a {
+  text-decoration: none;
+}
+
+.tag-list li {
+  background-color: var(--color-secondary);
+  font-weight: 600;
+  color: var(--color-light);
+  padding: 0.25em 0.85em;
+  border-radius: 0.75em;
+  font-size: var(--size-step-minus1);
+  letter-spacing: 0.0625em;
+}
+
+/* TODO: make the tags clickable and hover-able */

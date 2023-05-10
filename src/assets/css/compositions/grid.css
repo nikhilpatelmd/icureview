@@ -31,3 +31,25 @@ to change how empty grid tracks are handled */
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 26rem);
 }
+
+.grid[data-layout='card-home'] {
+  --grid-placement: auto-fit;
+}
+
+/* @media (min-width: 1200px) {
+  .prose-grid {
+    align-items: start;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr min(70ch, 60vw) 1fr;
+  }
+}
+
+.prose-grid > * {
+ grid-column: 2;
+}
+
+.prose-grid > .full-bleed {
+  width: 100%;
+  grid-column: 1 / -1;
+} */

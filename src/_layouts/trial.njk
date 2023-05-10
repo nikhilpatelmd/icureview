@@ -3,7 +3,7 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog flow">
+<article class="region blog">
   <header class="wrapper switcher flow">
     <div class="flow">
       <div class="cluster">
@@ -39,6 +39,10 @@ schema: blog
         <dd>
           <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">{{ doi }}</a>
         </dd>
+        <dt>RCT Identifier:</dt>
+        <dd>
+          <a href="{{ nctLink }}">{{ nctID }}</a>
+        </dd>
       </dl>
     </div>
     <div>
@@ -46,9 +50,11 @@ schema: blog
     </div>
   </header>
 
-  <div class="wrapper flow region prose e-content">
-    <div class="flow gist">{{ gist | md | safe }}</div>
-    <div class="region">{% include "partials/toc.njk" %}</div>
+  <div class="region wrapper flow prose">
+    <div class=" flow gist full-bleed">
+      <h2>The Gist</h2>
+      <p>{{ gist | md | safe }}</p>
+    </div>
+    <div class="table-of-contents">{% include "partials/toc.njk" %}</div>
     {{ content | safe }}
-  </div>
-</article>
+  </article>
