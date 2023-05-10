@@ -43,7 +43,7 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: 80ch;
+  max-width: 70ch;
 }
 
 h1,

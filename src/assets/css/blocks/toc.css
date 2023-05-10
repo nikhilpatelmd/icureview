@@ -2,6 +2,11 @@
   border: 10px solid black;
 }
 
-.toc > ol > li {
+.toc * {
   list-style: none;
+  /* padding: 0; */
+}
+
+toc > ol {
+  padding: 10em;
 }

@@ -1,0 +1,11 @@
+.gist {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  /* display: grid;
+  place-content: center; */
+}
+
+.gist ::selection {
+  color: var(--color-dark);
+  background: var(--color-light);
+}

@@ -36,7 +36,7 @@ to change how empty grid tracks are handled */
   --grid-placement: auto-fit;
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .prose-grid {
     align-items: start;
     display: grid;
@@ -52,4 +52,4 @@ to change how empty grid tracks are handled */
 .prose-grid > .full-bleed {
   width: 100%;
   grid-column: 1 / -1;
-} */
+}

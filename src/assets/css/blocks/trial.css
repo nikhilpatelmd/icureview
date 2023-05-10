@@ -82,14 +82,3 @@
   font-size: var(--size-step-0);
 }
 
-.gist {
-  background-color: white;
-}
-
-.gist * {
-  grid-column: 2;
-}
-
-.bg-white {
-  background-color: blueviolet;
-}

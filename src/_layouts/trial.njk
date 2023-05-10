@@ -3,8 +3,8 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog">
-  <header class="wrapper switcher flow">
+<article class="blog">
+  <header class="region wrapper switcher flow">
     <div class="flow">
       <div class="cluster">
         <h1 class="gradient-text">{{ title }}</h1>
@@ -49,12 +49,14 @@ schema: blog
       <p class="pico">{{ pico }}</p>
     </div>
   </header>
-
-  <div class="region wrapper flow prose">
-    <div class=" flow gist full-bleed">
-      <h2>The Gist</h2>
-      <p>{{ gist | md | safe }}</p>
-    </div>
-    <div class="table-of-contents">{% include "partials/toc.njk" %}</div>
-    {{ content | safe }}
+  <section>
+    <div class="flow prose prose-grid">
+      {% include "partials/gist.njk" %}
+      <div class="cluster">
+        <h2>Full Summary Contents</h2>
+        <p style="font-size: var(--size-step-code)">Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</p>
+      </div>
+      <div>{{ content | toc | safe }}</div>
+      {{ content | safe }}
+    </section>
   </article>
