@@ -1,7 +1,8 @@
 ---
 title: "INTERACT-2"
 datePublished: 2013-06-20
-datePosted: 2023-03-30
+posted: 2023-03-31
+datePosted: 3/30/2023
 dateModified: 2023-01-17
 journal: "New England Journal of Medicine"
 pmid: "23713578"
