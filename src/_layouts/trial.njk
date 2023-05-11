@@ -50,8 +50,9 @@ schema: blog
     </div>
   </header>
   <section>
-    <div class="flow prose prose-grid">
-      {% include "partials/gist.njk" %}
+    {% include "partials/gist.njk" %}
+
+    <div class="region wrapper flow prose">
       <div class="cluster">
         <h2>Full Summary Contents</h2>
         <p style="font-size: var(--size-step-code)">Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</p>
