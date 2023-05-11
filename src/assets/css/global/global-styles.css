@@ -40,11 +40,11 @@ h3 {
 }
 
 /* Set line lengths */
-p,
+/* p,
 li,
 blockquote:not([class]) {
   max-width: 70ch;
-}
+} */
 
 h1,
 h2,

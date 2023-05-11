@@ -14,7 +14,7 @@
 } */
 
 .hero {
-background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("https://uploads-ssl.webflow.com/643c3dfb7d21c0f495bf40a4/643c40296dea096c67464906_patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg");
+background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("/src/assets/images/books.webp");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
 }

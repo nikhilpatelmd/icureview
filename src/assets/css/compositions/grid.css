@@ -40,8 +40,8 @@ to change how empty grid tracks are handled */
   .prose-grid {
     align-items: start;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr min(70ch, 60vw) 1fr;
+    column-gap: var(--gutter);
+    grid-template-columns: 1fr min(85rem, 60vw) 1fr;
   }
 }
 
