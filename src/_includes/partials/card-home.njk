@@ -10,7 +10,7 @@
     <h2 style="font-size: var(--size-step-2)">
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h2>
-    {% set definedDate = Created %}
+    {% set definedDate = datePosted %}
     <p>
       <strong>Review Posted</strong>: {% include "partials/date.njk" %}</p>
     {% set definedDate = post.data.datePublished %}
