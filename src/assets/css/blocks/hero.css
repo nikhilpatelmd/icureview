@@ -14,7 +14,7 @@
 } */
 
 .hero {
-background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("/src/assets/images/books.webp");
+background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("https://uploads-ssl.webflow.com/643c3dfb7d21c0f495bf40a4/645c7c5f2e4131dec672ade3_books.webp");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
 }
