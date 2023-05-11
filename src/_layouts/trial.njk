@@ -45,8 +45,16 @@ schema: blog
         </dd>
       </dl>
     </div>
-    <div>
+    <div class="cluster flow">
       <p class="pico">{{ pico }}</p>
+      <div>
+        <p style="font-weight:700">Read more:</p>
+        <div>
+          <a class="button" href="#gist">The Gist</a>
+          <a class="button" href="#toc">Full Summary</a>
+        </div>
+
+      </div>
     </div>
   </header>
   <section>
@@ -54,7 +62,9 @@ schema: blog
 
     <div class="region flow prose wrapper content">
       <div class="cluster">
-        <h2>Full Summary Contents</h2>
+        <h2 id="toc">
+          <a class="heading-anchor" href="#toc">Full Summary Contents</a>
+        </h2>
         <p style="font-size: var(--size-step-code)">Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</p>
       </div>
       <div>{{ content | toc | safe }}</div>

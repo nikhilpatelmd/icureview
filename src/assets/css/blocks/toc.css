@@ -1,24 +1,22 @@
+.toc {
+  padding: var(--space-s) var(--space-l);
+  font-size: var(--size-step-1);
+}
+
 .toc > ol, ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: decimal;
   display: grid;
-  gap: 0.5rem;
+  gap: 0.125rem;
+  font-weight: 600;
 }
-
-/* .toc * li {
-  display: grid;
-  grid-template-columns: 0 1fr;
-  gap: 1.75em;
-  align-items: start;
-  font-size: 1.5rem;
-  line-height: 1.25;
-} */
 
 .toc * ol, ul {  
   margin: 0;
-  padding: 0em 2em;
+  padding: 0em 1em;
   list-style: none;
   display: grid;
-  gap: 0.5rem;
+  gap: 0.125rem;
+  font-weight: 300;
 }

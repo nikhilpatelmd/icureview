@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+.tag-list a:hover {
+  text-decoration: underline;
+}
+
 .tag-list li {
   background-color: var(--color-secondary);
   color: var(--color-light);

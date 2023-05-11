@@ -1,9 +1,10 @@
 .cluster > * {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 1em; */
+  gap: 1em;
   /* ↓ multiply by -1 to negate the halved value */
   margin: calc(var(--space-s-l) / 2 * -1);
+  align-items: center;
 }
 
 .cluster > * > * {
