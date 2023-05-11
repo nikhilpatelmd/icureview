@@ -35,21 +35,3 @@ to change how empty grid tracks are handled */
 .grid[data-layout='card-home'] {
   --grid-placement: auto-fit;
 }
-
-@media (min-width: 1200px) {
-  .prose-grid {
-    align-items: start;
-    display: grid;
-    column-gap: var(--gutter);
-    grid-template-columns: 1fr min(85rem, 60vw) 1fr;
-  }
-}
-
-.prose-grid > * {
- grid-column: 2;
-}
-
-.prose-grid > .full-bleed {
-  width: 100%;
-  grid-column: 1 / -1;
-}
