@@ -1,7 +1,7 @@
 ---
 title: "STICH-1"
 datePublished: 2013-06-20
-datePosted: Created
+datePosted: "2023-04-30"
 dateModified: 2023-05-17
 journal: "New England Journal of Medicine"
 pmid: "23713578"
@@ -11,7 +11,6 @@ nctLink: "https://clinicaltrials.gov/ct2/show/NCT00716079"
 tags:
   - "Intracerebral Hemorrhage"
   - "Neurosurgery"
-  - "Craniotomy"
 fundingSource: "George Institute for Global Health"
 patientPopulation: Acute primary ICH with SBP 150-220 mmHg within 6 hours of symptom onset
 intervention: Target SBP < 140 mmHg
