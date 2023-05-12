@@ -49,18 +49,31 @@ schema: blog
       <p class="pico">{{ pico }}</p>
       <div>
         <p style="font-weight:700">Read more:</p>
-        <div>
-          <a class="button" href="#gist">The Gist</a>
-          <a class="button" href="#toc">Full Summary</a>
-        </div>
+        <ul class="cluster">
+          <li>
+            <a class="button" href="#gist">The Gist</a>
+          </li>
+          <li>
+            <a class="button" href="#toc">Full Summary</a>
+          </li>
+          <li>
+            <a class="button" href="#further-reading">Further Reading</a>
+          </li>
+          <li>
+            <a class="button" href="#related-trials">Related Trials</a>
+          </li>
+        </ul>
 
       </div>
     </div>
   </header>
+
   <section>
     {% include "partials/gist.njk" %}
+  </section>
 
-    <div class="region flow prose wrapper content">
+  <section>
+    <div class="region flow prose content">
       <div class="cluster">
         <h2 id="toc">
           <a class="heading-anchor" href="#toc">Full Summary Contents</a>
@@ -70,4 +83,11 @@ schema: blog
       <div>{{ content | toc | safe }}</div>
       {{ content | safe }}
     </section>
-  </article>
+
+    <section>
+      <div class="region flow prose content">
+        <h2 id="further-reading">
+          <a class="heading-anchor" href="#further-reading">Further Reading</a>
+        </h2>
+      </section>
+    </article>
