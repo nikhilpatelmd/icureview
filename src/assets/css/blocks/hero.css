@@ -1,20 +1,20 @@
-/* .hero {
-  background-image: linear-gradient(135deg,
-      hsl(16deg 94% 61%) 0%,
-      hsl(15deg 91% 60%) 11%,
-      hsl(14deg 88% 59%) 22%,
-      hsl(12deg 86% 57%) 33%,
-      hsl(11deg 83% 56%) 44%,
-      hsl(9deg 81% 55%) 56%,
-      hsl(8deg 79% 54%) 67%,
-      hsl(5deg 77% 53%) 78%,
-      hsl(3deg 74% 52%) 89%,
-      hsl(0deg 72% 51%) 100%);
-  color: var(--color-light);
-} */
-
 .hero {
-background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("https://uploads-ssl.webflow.com/643c3dfb7d21c0f495bf40a4/645c7c5f2e4131dec672ade3_books.webp");
+  background-image: linear-gradient(115deg,
+      hsl(300deg 18% 24%) 0%,
+      hsl(290deg 20% 30%) 11%,
+      hsl(279deg 22% 35%) 22%,
+      hsl(269deg 24% 40%) 33%,
+      hsl(259deg 26% 45%) 44%,
+      hsl(248deg 28% 50%) 56%,
+      hsl(238deg 37% 55%) 67%,
+      hsl(227deg 48% 59%) 78%,
+      hsl(217deg 62% 64%) 89%,
+      hsl(207deg 79% 68%) 100%);
+  color: var(--color-light);
+}
+
+/* .hero {
+background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, .7)), url("https: //imagedelivery.net/EMW1z-rv9ewS_YEY8Xvwog/bdd1ecd9-2266-4eb0-e4e3-2d7a90198800/background");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
-}
+} */

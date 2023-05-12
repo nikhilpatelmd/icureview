@@ -17,8 +17,8 @@
 }
 
 .tag-list li {
-  background-color: var(--color-secondary);
-  color: var(--color-light);
+  background-color: var(--color-secondary-glare);
+  color: var(--color-dark);
   padding: 0.25em 0.85em;
   border-radius: 0.75em;
   font-size: var(--size-step-minus1);
