@@ -6,6 +6,10 @@ module.exports = {
       url: '/trials/'
     },
     {
+      text: 'Blog',
+      url: '/blog/'
+    },
+    {
       text: 'About',
       url: '/about/'
     }
